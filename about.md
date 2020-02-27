@@ -15,5 +15,4 @@ In this role I was responsible for managing the in-play [Exchange](https://www.b
 
 I'm now part of the Cloud Automation team based in our Dublin office. We're responsible for provisioning all of our cloud infrastructure, developing our framework and deploying applications through CI/CD processes.
 
-In my spare time, you can find me Refereeing football in Dublin across the [NDSL](http://ndsl.ie/) and [Airtricity Underage Leagues](https://www.sseairtricityleague.ie/).
-
+In my spare time, you can find me Refereeing football in Dublin across the [NDSL](http://ndsl.ie/) and [Airtricity Underage Leagues](https://www.sseairtricityleague.ie/){:target="_blank"}.
