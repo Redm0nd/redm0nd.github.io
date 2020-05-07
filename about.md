@@ -11,7 +11,7 @@ I'm a `Cloud Support Engineer` based in Dublin, Ireland. I recently started work
 I studied Electronic and Computer Engineering at <a href="https://www.dcu.ie/" target="_blank">Dublin City University</a>.
 
 
-Before AWS I worked with <a href="https://www.paddypowerbetfair.com" target="_blank">Paddy power Betfair</a>.
+Before AWS I worked with <a href="https://www.paddypowerbetfair.com" target="_blank">Paddy Power Betfair</a>.
 
 
 I joined PPB in January 2017 as a Football Exchange Operator on a part-time basis.
