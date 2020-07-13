@@ -15,7 +15,7 @@ Before AWS I worked with <a href="https://www.paddypowerbetfair.com" target="_bl
 
 
 I joined PPB in January 2017 as a Football Exchange Operator on a part-time basis.
-In this role I was responsible for managing the in-play <a href="https://www.betfair.com/exchange/plus/football" target="_blank">Exchange</a> markets for the highest profile matches across World Football.
+In this role I was responsible for managing the in-play <a href="https://www.betfair.com/exchange/plus/football" target="_blank">Exchange</a> markets for the highest profile matches across world football.
 
 In September 2018, I moved into Cloud Automation with PPB. Working in a team based across four locations; Dublin, Cluj, London and Porto.
 
