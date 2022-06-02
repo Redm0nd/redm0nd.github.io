@@ -6,7 +6,6 @@ categories: jekyll update
 ---
 This post describes the deployment of an aws ami rstudio and it's management with cron jobs
 
-WIP: Will be updating partially over the next few weeks
 
 ```
 aws ec2 describe-instances
