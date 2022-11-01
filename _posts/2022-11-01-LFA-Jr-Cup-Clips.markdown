@@ -6,5 +6,5 @@ categories: jekyll update
 ---
 
 
-![First Goal](/assets/FAI New Balance U17 Challenge Cup Final St Kevin's Boys No 24.jpg)
+![First Goal](/assets/LFA 2nd Round - Montpellier First Goal.mov)
 St. Pats 0 - 1 Montpeller FC - 6th minute
