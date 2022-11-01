@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi, I'm Dylan Redmond.
 
-I'm a `Cloud Support Engineer` based in Dublin, Ireland. I recently started working with <a href="https://aws.amazon.com/" target="_blank">AWS</a>.
+I'm a `Senior Cloud Infrastructure Engineer` based in Dublin, Ireland. I recently started working at <a href="https://www.workhuman.com/" target="_blank">Workhuman</a>.
 
 I studied Electronic and Computer Engineering at <a href="https://www.dcu.ie/" target="_blank">Dublin City University</a>.
 
