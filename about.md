@@ -11,7 +11,7 @@ I'm a `Senior Cloud Infrastructure Engineer` based in Dublin, Ireland. I recentl
 I studied Electronic and Computer Engineering at <a href="https://www.dcu.ie/" target="_blank">Dublin City University</a>.
 
 
-Before Workhuman I worked at <a href="https://www.paddypowerbetfair.com" target="_blank">Paddy Power Betfair</a> & <a href="https://www.paddypowerbetfair.com" target="_blank">Paddy Power Betfair</a>.
+Before Workhuman I worked at <a href="https://aws.amazon.com/" target="_blank">AWS</a> & <a href="https://www.paddypowerbetfair.com" target="_blank">Paddy Power Betfair</a>.
 
 
 I joined PPB in January 2017 as a Football Exchange Operator on a part-time basis.
