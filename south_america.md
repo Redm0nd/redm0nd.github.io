@@ -1,15 +1,15 @@
 ---
 layout: default
-title: South America
+title: South America 2023
 ---
 
 # South America
 
 Blog posts related to South America travel 2023:
 
-- [Quito, Ecuacdor](/southamerica/post-1-slug)
+- [Quito, Ecuador](/southamerica/post-1-slug)
 - [Cuyabeno, Ecuador](/southamerica/post-2-slug)
-- [Lima, Peru](/southamerica/post-3-slug)
+- [Lima, Peru](/southamerica/lima)
 - [Paracas, Peru](/southamerica/post-4-slug)
 - [Huacachina, Peru](/southamerica/post-5-slug)
 
