@@ -1,6 +1,6 @@
 ---
 layout: default
-title: South America Blog Posts
+title: South America
 ---
 
 # South America Blog Posts
