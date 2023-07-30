@@ -3,9 +3,10 @@ layout: custom_page
 date: 2023-07-09 08:00:30 +0100
 categories: travel SouthAmerica Peru
 permalink: /southamerica/cuyabeno/
+title: ""
 ---
 
-## Gallery from Cuyabeno Rainforest, Ecuador. 4 days, 3 nights
+## Gallery from Cuyabeno Rainforest, Ecuador
 
 ![Cuyabeno Boats](/images/cuyabeno/cuyabeno_boats.JPG)
 *Boats in Cuyabeno*
