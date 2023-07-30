@@ -5,4 +5,6 @@ categories: travel SouthAmerica Peru
 permalink: /southamerica/cuyabeno/
 ---
 
+![Cuyabeno Rooftop](/images/cuyabeno/cuyabeno_rooftop.JPG)
+*View from the Rooftop in Cuyabeno*
 
