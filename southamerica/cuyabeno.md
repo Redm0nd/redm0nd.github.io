@@ -16,3 +16,9 @@ permalink: /southamerica/cuyabeno/
 ![Cuyabeno Monkeys](/images/cuyabeno/cuyabeno_monkeys.mp4)
 *Monkeys in Cuyabeno*
 
+<video controls>
+  <source src="/images/cuyabeno/cuyabeno_monkeys.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+*Monkeys in Cuyabeno*
+
