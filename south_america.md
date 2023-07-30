@@ -5,7 +5,7 @@ title: South America 2023
 
 # South America
 
-Blog posts related to South America travel 2023:
+## Blog posts related to South America travel 2023:
 
 - [Quito, Ecuador](/southamerica/post-1-slug)
 - [Cuyabeno, Ecuador](/southamerica/post-2-slug)
@@ -13,8 +13,8 @@ Blog posts related to South America travel 2023:
 - [Paracas, Peru](/southamerica/post-4-slug)
 - [Huacachina, Peru](/southamerica/post-5-slug)
 
-Places to eat:
+## Places to eat:
 
-Galleries:
+## Galleries:
 
-Costs:
+## Costs:
