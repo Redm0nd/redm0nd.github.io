@@ -5,7 +5,7 @@ categories: travel SouthAmerica Peru
 permalink: /southamerica/cuyabeno/
 ---
 
-# Gallery from Cuyabeno Rainforest, Ecuador. 4 days, 3 nights
+## Gallery from Cuyabeno Rainforest, Ecuador. 4 days, 3 nights
 
 ![Cuyabeno Boats](/images/cuyabeno/cuyabeno_boats.JPG)
 *Boats in Cuyabeno*
