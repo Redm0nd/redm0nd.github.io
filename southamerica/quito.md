@@ -1,6 +1,7 @@
 ---
 layout: custom_page
 date: 2023-07-04 08:00:30 +0100
+page_title: Quito
 categories: travel SouthAmerica Ecuador
 permalink: /southamerica/quito/
 ---
