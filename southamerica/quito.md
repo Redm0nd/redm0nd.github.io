@@ -22,7 +22,7 @@ We stayed at the Secret Garden Hostel, full of backpackers' with great views of 
 
 After the walking tour, we headed up to the [TelefériQo Cable Car](https://teleferico.com.ec/). The Cable car starts from around 2900m and brings you up to over 4000m in ~20 minutes. The views were amazing, especially from the top. You get to see how big the city actually is with 2 million people. 
 
-![Image from Quito Cable Car](/image/quito_cablecar.jpg)
+![Image from Quito Cable Car](/images/quito_cablecar.jpg)
 
 Next stop was to catch a night bus to Cuyabeno which is at the foot of the Amazon Rainforest in Ecuador. 
 
