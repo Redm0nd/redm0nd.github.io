@@ -12,7 +12,7 @@ One of the first things I noticed about Quito was the altitude. Standing at an e
 
 The altitude was definitely something to get used to, and I even with my level of fitness and countless Altitude Classes @ AltiPeak on the long mile road, I still found myself a small bit short of breathe when walking up the steep hills. But within a day or so, my body started adjusting to the height.
 
-We went on the Hostels local walking tour the next morning. This was a great way to see some of the city's most iconic sights, and get a feel for the culture. Our guide gave us the low-down on why half of the buildings were never fully complete (you only pay taxes on the building if it's complete) and he also brought us around to some of the best food spots in the city. ADD MORE HERE
+We went on the Hostels walking tour the next morning. This was a great way to see some of the city's most iconic sights, and get a feel for the culture - would recommend getting one in here. Our guide gave us the low-down on why half of the buildings were never fully complete (you only pay taxes on the building if it's complete) and he also brought us around to some of the best food spots in the city. We sampled some local gelato and chocolate. 
 
 ![Image from Quito's food market](/images/market_quito.jpg)
 
@@ -20,7 +20,9 @@ We stayed at the Secret Garden Hostel, full of backpackers' with great views of 
 
 ![Image from Secret Garden Hostel](/images/secret_garden_view.jpg)
 
-Quito was a great place to start and the walking tour from the Hostel was a must do. TBC..... {{}} 
+After the walking tour, we headed up to the [TelefériQo Cable Car](https://teleferico.com.ec/). The Cable car starts from around 2900m and brings you up to over 4000m in ~20 minutes. The views were amazing, especially from the top. You get to see how big the city actually is with 2 million people. 
+
+![Image from Quito Cable Car](/image/quito_cablecar.jpg)
 
 Next stop was to catch a night bus to Cuyabeno which is at the foot of the Amazon Rainforest in Ecuador. 
 
