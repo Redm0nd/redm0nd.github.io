@@ -6,4 +6,4 @@ categories: travel SouthAmerica Peru
 permalink: /southamerica/lima/
 ---
 
-test page for Lima site 
+test page for Lima site.
