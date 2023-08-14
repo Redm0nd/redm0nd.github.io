@@ -9,7 +9,7 @@ page_title: "Cuyabeno, Ecuador"
 
 Next stop was Cuyabeno in Ecuador in to the Amazon Rainforest. River offers an unparalleled experience in biodiversity. The Bamboo Eco Lodge provides sustainable accommodations right in the heart of the reserve.
 
-![Lodge Overview](path_to_your_image_of_the_lodge.jpg)
+![Lodge Overview](../images/cuyabeno/cuyabeno_rooftop.JPG)
 
 ## Day 1: Arrival and Accommodation
 
@@ -19,7 +19,7 @@ Next stop was Cuyabeno in Ecuador in to the Amazon Rainforest. River offers an u
 
 ## Day 2: Activities and Local Interaction
 
-![Cuyabeno River](path_to_your_image_of_the_river.jpg)
+![Cuyabeno River](../images/cuyabeno/cuyabeno_boats.JPG)
 
 - Morning canoe ride on the Cuyabeno River.
 - Observed various wildlife including birds and river dolphins.
