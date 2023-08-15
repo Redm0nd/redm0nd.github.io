@@ -41,4 +41,3 @@ Next stop was Cuyabeno in Ecuador in to the Amazon Rainforest. River offers an u
 
 ## Overview
 
-At 28 years old, this trip provided a comprehensive insight into the Cuyabeno Wildlife Reserve's biodiversity. Bamboo Eco Lodge's location and sustainable approach made the experience both informative and environmentally conscious.
