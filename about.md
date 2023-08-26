@@ -22,3 +22,6 @@ In September 2018, I moved into Cloud Automation with PPB. Working in a team bas
 
 We were responsible for provisioning all of our cloud infrastructure, developing our framework and making it easy for our developers to deploy to production through CI/CD processes. (Across multiple DC's on both Openstack and AWS)
 
+
+hello james 
+
