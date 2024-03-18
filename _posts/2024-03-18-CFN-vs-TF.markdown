@@ -6,11 +6,13 @@ categories: jekyll update
 published: true
 ---
 
-# Comparing CloudFormation and Terraform in 2014: An "Expert's" Insight
+# An "Expert's" Insight
 
 ## Preface
 
-Welcome to another deep dive into the world of Infrastructure as Code (IaC). My journey with IaC began in 2018, focusing exclusively on CloudFormation. Over the years, I honed my skills to become a Subject Matter Expert in CloudFormation, leveraging its capabilities within AWS. However, in 2022, my career took an exciting turn when I joined Workhuman, where Terraform is the go-to tool for all things IaC. This transition offered me a unique perspective on both tools, and in this post, I'll share my insights, comparing CloudFormation and Terraform across various dimensions.
+My journey with IaC began in 2018, focusing exclusively on CloudFormation. Over the years, I honed my skills to become a Subject Matter Expert in CloudFormation while working at AWS. This involved a lot of things, mainly ,providing complex work evidence of solving CFN issues for customers and also passing a board with the CFN dev team in Seattle. However, in 2022, I took an exciting turn when I left AWS, where Terraform would be the go-to tool for all things IaC in my new company. This transition offered me a unique perspective on both tools, and in this post, I'll share my insights, comparing CloudFormation and Terraform across various dimensions when deploying infra to AWS.
+
+Having used both tools extensively for the past few years now I'll offer my perspective on using both tools below and where I think things will go over the next few years. 
 
 ### Ecosystem
 
@@ -20,9 +22,39 @@ Welcome to another deep dive into the world of Infrastructure as Code (IaC). My 
 
 ### Compatibility/Support
 
-**CloudFormation:** Being an AWS-native tool, CloudFormation offers unparalleled support for new AWS features and services. However, its compatibility with non-AWS resources is limited, which can be a constraint for multi-cloud or hybrid cloud environments.
+**CloudFormation:** CloudFormation launched back in 2011 and whether you view this as a pro or con any template written on Day 1 of CloudFormation can still be deployed today without issues or errors. For example, when working older, more mature code bases this can be a benefit during updates. AWS will always support that JSON or YAML template.
 
-**Terraform:** Terraform shines in its ability to manage resources across different cloud providers. Its provider model allows for seamless integration with AWS, Azure, Google Cloud, and more, making it a versatile choice for multi-cloud strategies.
+Whereas with Terraform, when you go to revisit your long running RDS DB that's reaching EOL support, you'll be faced with major upgrade changes for the [terraform-provider-aws](https://github.com/hashicorp/terraform-provider-aws/issues/29842). Similarly, your `template_files` may no longer be supported and you need to spend time updating code to use the newer [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile) function.
+
+Some other issues I've noticed creeping up recently are with resource AWS support and updates from Terraform. At re:invent 2023 we got [periodic recording for Config](https://aws.amazon.com/about-aws/whats-new/2023/11/aws-config-periodic-recording/) on November 26th, this was supposed to come with OOTB support from CloudFormation via the `RecordingMode` parameter, we didn't get it that night but had to wait until December 11th via [1861](https://github.com/aws-cloudformation/cloudformation-coverage-roadmap/issues/1861) not too long considering it's AWS' busiest week of the year and a lot of staff are in Vegas:
+
+```
+Type: AWS::Config::ConfigurationRecorder
+Properties:
+  Name: String
+  RecordingGroup: 
+    RecordingGroup
+  RecordingMode: 
+    RecordingMode
+  RoleARN: String
+```
+
+But it took a whopping 3 months to reach Terraform support on February 23rd 2024 when it was delivered in [34577](https://github.com/hashicorp/terraform-provider-aws/issues/34577#issuecomment-1961262081)
+
+Similarly, with CodePipeline we got the [V2 Pipeline Type](https://aws.amazon.com/about-aws/whats-new/2023/11/aws-codepipeline-pipeline-execution-source-revision-overrides/) for re:Invent week on November 22, 2023. This allows you to use a couple of new features but most importantly allowed you to avail of cheaper Pipeline costs via the new type. This came with same day support via CloudFormation `PipelineType` [parameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-pipelinetype).
+
+This was brought to Terraform in January 2024 via [34122](https://github.com/hashicorp/terraform-provider-aws/issues/34122).
+
+I'm not complaining about having to wait here and understand that the aws terraform provider is maintained by a [small team](https://hashicorp.github.io/terraform-provider-aws/), I just suspected these changes to be implemented at a quicker rate with the maturitity of the AWS provider.
+
+Another example of gaps in support I was surprised to see were with data sources. To this day there's no support for HTTP API Gateway custom domain name data blocks in Terraform, I suspect shortly after publishing this though it will be provided via [36027](https://github.com/hashicorp/terraform-provider-aws/issues/36027):
+
+```
+data "aws_apigatewayv2_domain_name" "example" {
+  domain_name = "api.example.com"
+}
+```
+
 
 ### Speed
 
