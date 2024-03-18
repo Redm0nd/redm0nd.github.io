@@ -131,13 +131,27 @@ So while Terraform can be faster to deploy resources, you mightn't get that bake
 
 ### Associated Toolsets & Accessories
 
+cdk migrate, tf lint, cfn lint, checkov, tfsec, aqua 
+
+Both tools here perform similarly in this regard with CloudFormation and Terraform both having tools to lint and enforce security best practice. [cfn lint](https://github.com/aws-cloudformation/cfn-lint) and [tf lint](https://github.com/terraform-linters/tflint-ruleset-aws) both offer similar rule sets. `cfn-guard` also feels a lot like `tfsec` although the latter has faced a rename recently from tfsec to trivy - again something we don't see with CloudFormation are renames.
+
+When using [Open Policy Agent](https://www.cncf.io/projects/open-policy-agent-opa/) CloudFormation allows you to use hooks which can be finicky with OPA as hooks only support Python or Java. Because of this, you need the OPA CFN Hook which does work. If you really want to use OPA with Terraform you'll need to pay for Terraform Cloud:
+
+![](image of OPAL in tf)
+
+[checkov](https://github.com/bridgecrewio/checkov) is also useful for both CFN and TF and is free _for now_. 
+
 
 ### Programming and Dev Experience 
+
+The capabilities of HCL is where Terraform excels in comparison to CloudFormation. When using both these tools at scale you begin to face issues at scale. 
+
+IaC generator, CDK didn't use much, CDK bootstrap multi-account is difficult. tags with Terraform
 
 
 ### Future of Both Tools
 
-**CloudFormation:** As AWS continues to evolve, CloudFormation is expected to remain a key player, potentially expanding its capabilities and integration with other AWS services. Its future likely includes enhancements in usability and template management.
+**CloudFormation:** As AWS continues to evolve, CloudFormation is expected to remain a key player, potentially expanding its capabilities and integration with other AWS services. Its future likely includes enhancements in usability and template management. With the additional abstraction of the CDK, I wonder will we ever see a rebuilt CFN engine that doesn't translate go, typescript or python code back in to JSON or YAML templates like the CDK does - but today this is where we're at. 
 
 **Terraform:** Terraform's trajectory is towards broader ecosystem support, enhanced state management, and improved collaboration features. Its adaptability and community-driven development suggest a future where it remains a dominant force in the IaC landscape, accommodating evolving cloud technologies and practices.
 
