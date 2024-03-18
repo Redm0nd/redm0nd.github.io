@@ -2,11 +2,24 @@
 layout: post
 title: "CloudFormation vs. Terraform in 2024"
 date: 2024-03-18 08:00:30 +0100
-categories: jekyll update
+categories: aws IaC cloudformation terraform
 published: true
 ---
 
 # An "Expert's" Insight
+
+## Table of Contents
+
+1. [Preface](#preface)
+2. [Ecosystem](#ecosystem)
+3. [Compatibility/Support](#compatibilitysupport)
+4. [OpenSource vs. Licencing vs. Native](#opensource-vs-licencing-vs-native)
+5. [Speed](#speed)
+6. [Associated Toolsets & Accessories](#associated-toolsets--accessories)
+7. [Programming and Dev Experience](#programming-and-dev-experience)
+8. [Future of Both Tools](#future-of-both-tools)
+9. [Conclusion](#conclusion)
+
 
 ## Preface
 
@@ -184,4 +197,4 @@ I like to think that within an enterprise you can use both. Either or. As long a
 
 I also wouldn't turn anyone away from using the `aws_cloudformation_stack` [terraform resource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudformation_stack), while it may appear to be an antipattern it can combine the best of worlds at times. 
 
-Having said that, with the recent improvements CloudFormation has made and the changes in licencing and uncertainty from Terraform. I would have to crown the IaC winer in my opinion as ... CloudFormation. 
+Having said that, with the recent improvements CloudFormation has made and the changes in licencing and uncertainty from Terraform. I would have to crown the long term IaC winner in my opinion as ... CloudFormation. 
