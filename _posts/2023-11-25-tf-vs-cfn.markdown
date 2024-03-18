@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "CloudFormation vs. Terraform"
+date:   2023-11-24 23:12:30 +0100
+categories: jekyll update
+---
+
+I've been working with IaC for 5 years now
