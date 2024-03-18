@@ -2,7 +2,7 @@
 layout: post
 title: "CloudFormation vs. Terraform in 2024"
 date: 2024-03-18 08:00:30 +0100
-categories: aws IaC cloudformation terraform
+tags: aws IaC cloudformation terraform
 published: true
 ---
 
