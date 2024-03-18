@@ -108,7 +108,7 @@ This is one the hottest topics recently in regards to CloudFormation vs. Terrafo
 
 Further, this sparked the creation of [OpenTofu](https://opentofu.org/) a truly open-source alternative. So with a lack of transparency from HashiCorp you're faced with continuing to use Terraform and hope it remains free or seriously consider OpenTofu - not exactly a trivial task and something you want your dev team discussing. Anyone using CloudFormation won't be having this conversation. 
 
-On the CloudFormation side, back in the day CloudFormation was a completely closed shop and owned by a dev team who were responsible for implementing all of the AWS' resources in to CFN. As the number of services AWS created grew this became unsustainable, especially with 2 pizza teams - it was difficult to stay consistent. 
+On the CloudFormation side, back in the day CloudFormation was a completely closed shop and owned by a dev team who were responsible for implementing all of the AWS' resources in to CFN. As the number of services AWS created grew this became [unsustainable](https://aws.amazon.com/blogs/devops/cloudformation-coverage/), especially with 2 pizza teams - it was difficult to stay consistent. 
 
 Today, there's still a CFN service team in AWS but they've built a platform where on launch other Service Teams in AWS must write their own provider code for CFN. This makes things consistent across all of the teams. 
 
@@ -139,15 +139,36 @@ When using [Open Policy Agent](https://www.cncf.io/projects/open-policy-agent-op
 
 ![](image of OPAL in tf)
 
-[checkov](https://github.com/bridgecrewio/checkov) is also useful for both CFN and TF and is free _for now_. 
+[checkov](https://github.com/bridgecrewio/checkov) is also useful for both CFN and TF and is free _for now_. The CDK also supports features for validation during synthesis time via [CfnGuardValidator](https://github.com/cdklabs/cdk-validator-cfnguard) and supports OPA and Chekov.  
 
 
 ### Programming and Dev Experience 
 
-The capabilities of HCL is where Terraform excels in comparison to CloudFormation. When using both these tools at scale you begin to face issues at scale. 
+The capabilities of HCL is where Terraform excels in comparison to CloudFormation. When using both these tools at scale you begin to face teething issues. While CloudFormation has a decent set of Pseudo parameters that can be used to enable multi-account, multi-region deploys such as `AWS::AccountId` & `AWS::Region` the Intrinsic Functions also work but aren't a breeze to play with. They have expanded on these with recent additions via the `AWS::LanguageExtensions` transforms but again it's a little convoluted. 
 
-IaC generator, CDK didn't use much, CDK bootstrap multi-account is difficult. tags with Terraform
+When using CFN at scale with Nested Stacks you'll also face issues with Imports/Exports and Cross-Stack references and dependencies. I'm sure anyone reading this will wince at the following error:
+```
+StackA Export StackA:ExportsOutputRefMyTableCD79AAA0A1504A18 cannot be deleted as it is in use by StackB
+```
 
+I would recommend avoiding these completely and using Parameter Store and [dynamic references](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references.html) for non-sensitive values. 
+
+Terraforms development experience trumps CloudFormation here considerably. From my time working with tf there's something useful there when you need to reference an existing resource or something else. For example, `data` sources for references, modules for re-usabilility, `outputs` for debugging and referencing values and the list goes on. 
+
+`dynamic` Blocks can also be extremely useful within modules when aiming to create slightly different variations of resources but re-use the same code. I haven't even mentioned `for_each` or `count`. The list of built-in [functions](https://developer.hashicorp.com/terraform/language/functions) is endless too. You've also got the random provider to take care of dynamic placement of resources in subnets:
+
+```
+data "aws_availability_zones" "available" {
+state = "available"
+}
+
+resource "random_shuffle" "az" {
+input = data.aws_availability_zones.available.names
+result_count = 3
+}
+```
+
+CloudFormation definitely comes out second in this contest as the more primitive tool. For more "dev" DevOps Engineers and Software Engineers working at scale, Terraform will naturally be the preffered choice here.
 
 ### Future of Both Tools
 
