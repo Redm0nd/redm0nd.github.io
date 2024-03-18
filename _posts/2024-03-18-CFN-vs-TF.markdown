@@ -10,9 +10,11 @@ published: true
 
 ## Preface
 
-My journey with IaC began in 2018, focusing exclusively on CloudFormation. Over the years, I honed my skills to become a Subject Matter Expert in CloudFormation while working at AWS. This involved a lot of things, mainly ,providing complex work evidence of solving CFN issues for customers and also passing a board with the CFN dev team in Seattle. However, in 2022, I took an exciting turn when I left AWS, where Terraform would be the go-to tool for all things IaC in my new company. This transition offered me a unique perspective on both tools, and in this post, I'll share my insights, comparing CloudFormation and Terraform across various dimensions when deploying infra to AWS.
+My journey with IaC began in 2018, focusing exclusively on CloudFormation. Over the years, I honed my skills to become a Subject Matter Expert in CloudFormation while working at AWS. This involved a lot of things, mainly ,providing complex work evidence of solving CFN issues for customers and also passing a board with the CFN dev team in Seattle. However, since 2022, Terraform has beeen the go-to tool for all things IaC where I work. 
 
-Having used both tools extensively for the past few years now I'll offer my perspective on using both tools below and where I think things will go over the next few years. 
+This was quite a change, and while I still use CFN for a lot of my personal projects I've been using Terraform almost entirely in work apart from a few SAM stacks deployed via Terraform modules. 
+
+This transition offered me a unique perspective on both tools, and in this post, I'll share my insights, comparing CloudFormation and Terraform across various dimensions when deploying infra to AWS. I'll also show why I think CloudFormation is improving and closing the gap on Terraform and what I think is to come from both over the next few years. 
 
 ### Ecosystem
 
@@ -24,28 +26,30 @@ Having used both tools extensively for the past few years now I'll offer my pers
 
 **CloudFormation:** CloudFormation launched back in 2011 and whether you view this as a pro or con any template written on Day 1 of CloudFormation can still be deployed today without issues or errors. For example, when working older, more mature code bases this can be a benefit during updates. AWS will always support that JSON or YAML template.
 
-Whereas with Terraform, when you go to revisit your long running RDS DB that's reaching EOL support, you'll be faced with major upgrade changes for the [terraform-provider-aws](https://github.com/hashicorp/terraform-provider-aws/issues/29842). Similarly, your `template_files` may no longer be supported and you need to spend time updating code to use the newer [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile) function.
+Whereas with Terraform, when you go to revisit your long running RDS DB that's reaching EOL support, you'll be faced with major upgrade changes for the [terraform-provider-aws](https://github.com/hashicorp/terraform-provider-aws/issues/29842). Similarly, your `template_files` may no longer be supported and you need to spend time updating code to use the newer [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile) function. There'll always be that management overhead when using Terraform. 
 
-Some other issues I've noticed creeping up recently are with resource AWS support and updates from Terraform. At re:invent 2023 we got [periodic recording for Config](https://aws.amazon.com/about-aws/whats-new/2023/11/aws-config-periodic-recording/) on November 26th, this was supposed to come with OOTB support from CloudFormation via the `RecordingMode` parameter, we didn't get it that night but had to wait until December 11th via [1861](https://github.com/aws-cloudformation/cloudformation-coverage-roadmap/issues/1861) not too long considering it's AWS' busiest week of the year and a lot of staff are in Vegas:
+Some other issues I've noticed creeping up recently are with resource AWS support and updates from Terraform. 
+
+At re:invent 2023 we got [periodic recording for Config](https://aws.amazon.com/about-aws/whats-new/2023/11/aws-config-periodic-recording/) on November 26th, this was supposed to come with OOTB support from CloudFormation via the `RecordingMode` parameter, we didn't get it that night but had to wait until December 11th via [1861](https://github.com/aws-cloudformation/cloudformation-coverage-roadmap/issues/1861) not too long considering it's AWS' busiest week of the year and a lot of staff are in Vegas:
 
 ```
 Type: AWS::Config::ConfigurationRecorder
 Properties:
-  Name: String
+[...]
   RecordingGroup: 
     RecordingGroup
   RecordingMode: 
     RecordingMode
-  RoleARN: String
+[...]
 ```
 
-But it took a whopping 3 months to reach Terraform support on February 23rd 2024 when it was delivered in [34577](https://github.com/hashicorp/terraform-provider-aws/issues/34577#issuecomment-1961262081)
+But it took a whopping 3 months to reach Terraform support on February 23rd 2024 when it was delivered via [34577](https://github.com/hashicorp/terraform-provider-aws/issues/34577#issuecomment-1961262081)!
 
 Similarly, with CodePipeline we got the [V2 Pipeline Type](https://aws.amazon.com/about-aws/whats-new/2023/11/aws-codepipeline-pipeline-execution-source-revision-overrides/) for re:Invent week on November 22, 2023. This allows you to use a couple of new features but most importantly allowed you to avail of cheaper Pipeline costs via the new type. This came with same day support via CloudFormation `PipelineType` [parameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-pipelinetype).
 
 This was brought to Terraform in January 2024 via [34122](https://github.com/hashicorp/terraform-provider-aws/issues/34122).
 
-I'm not complaining about having to wait here and understand that the aws terraform provider is maintained by a [small team](https://hashicorp.github.io/terraform-provider-aws/), I just suspected these changes to be implemented at a quicker rate with the maturitity of the AWS provider.
+I'm not complaining about having to wait here and understand that the aws terraform provider is maintained by a [small team](https://hashicorp.github.io/terraform-provider-aws/), I just suspected these changes to be implemented at a quicker rate with the maturitity of the AWS provider. The speed of feature delivery is food for though when using these tools at scale. 
 
 Another example of gaps in support I was surprised to see were with data sources. To this day there's no support for HTTP API Gateway custom domain name data blocks in Terraform, I suspect shortly after publishing this though it will be provided via [36027](https://github.com/hashicorp/terraform-provider-aws/issues/36027):
 
@@ -55,12 +59,81 @@ data "aws_apigatewayv2_domain_name" "example" {
 }
 ```
 
+Some things Terraform should be commended on though, is its support for multiple providers and tooling. For example, if using CloudFormation and mTLS with API Gateway your only real native option is to use ACM Private CA to issue certificates with a **checks AWS Bill** cost of $400/month per certificate. If you're using Terraform you can use the [TLS Provider](https://registry.terraform.io/providers/hashicorp/tls/latest/docs) and self sign certs for your API gateways truststore:
+
+```
+###############################################
+# S3 bucket and TLS certificate for truststore
+###############################################
+
+resource "aws_s3_bucket" "truststore" {
+  bucket = "${random_pet.this.id}-truststore"
+  #  acl    = "private"
+}
+
+resource "aws_s3_object" "truststore" {
+  bucket                 = aws_s3_bucket.truststore.bucket
+  key                    = "truststore.pem"
+  server_side_encryption = "AES256"
+  content                = tls_self_signed_cert.example.cert_pem
+}
+
+resource "tls_private_key" "private_key" {
+  algorithm = "RSA"
+}
+
+resource "tls_self_signed_cert" "example" {
+  is_ca_certificate = true
+  private_key_pem   = tls_private_key.private_key.private_key_pem
+
+  subject {
+    common_name  = "example.com"
+    organization = "ACME Examples, Inc"
+  }
+
+  validity_period_hours = 12
+
+  allowed_uses = [
+    "cert_signing",
+    "server_auth",
+  ]
+}
+```
+
+The equivalent to the above is a lambda-backed custom resource in CFN, which would not be graceful at all. Using a mix of resource providers is where Terraform can outshine CloudFormation when deploying to AWS on occasions.
+
+### OpenSource vs. Licencing vs. Native
+
+This is one the hottest topics recently in regards to CloudFormation vs. Terraform. In the past, a very strong argument to use Terraform was that it's "open source". However in 2023, HashiCorp threw a curve ball by adopting a [Business Source Licence](https://www.hashicorp.com/blog/hashicorp-adopts-business-source-license). I won't go in to what's involved in all of that in this post but you can think of services that used to be free and aren't anymore.
+
+Further, this sparked the creation of [OpenTofu](https://opentofu.org/) a truly open-source alternative. So with a lack of transparency from HashiCorp you're faced with continuing to use Terraform and hope it remains free or seriously consider OpenTofu - not exactly a trivial task and something you want your dev team discussing. Anyone using CloudFormation won't be having this conversation. 
+
+On the CloudFormation side, back in the day CloudFormation was a completely closed shop and owned by a dev team who were responsible for implementing all of the AWS' resources in to CFN. As the number of services AWS created grew this became unsustainable, especially with 2 pizza teams - it was difficult to stay consistent. 
+
+Today, there's still a CFN service team in AWS but they've built a platform where on launch other Service Teams in AWS must write their own provider code for CFN. This makes things consistent across all of the teams. 
+
+While I don't see the CloudFormation engine ever becoming fully open-source a lot of the resource providers have been made available on GitHub [here](https://github.com/aws-cloudformation/resource-providers-list?tab=readme-ov-file) which is a welcome change to having to contact AWS Support directly for all resource issues and having no transparency in the past. 
+
+There's also the [cloudformation-coverage-roadmap](https://github.com/aws-cloudformation/cloudformation-coverage-roadmap/projects/1) which provides an amicable amount of transparency in to what is and isn't coming to CloudFormation. 
+
 
 ### Speed
 
-**CloudFormation:** CloudFormation's execution speed is generally consistent, benefiting from direct integration with AWS. However, the speed can vary based on the complexity and size of the templates.
+Speed of deployment has been talked about a lot in CFN vs. TF but I haven't seen any legitimate benchmark data. 
 
-**Terraform:** Terraform is known for its efficient execution, particularly with its parallelism capabilities, which can significantly reduce deployment times. However, its speed can also depend on the specific configuration and the state management approach.
+From personal use though, I do feel that Terraform is quicker to deploy. Especially for specific AWS resources such as CloudFront, R53 and IAM updates. However, some things do just take a while. For example, with ECS Services I know that CloudFormation won't mark the resource as `CREATE_COMPLETE` until a task has reached the [steady state](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-event-messages.html) it pings DescribeTask calls to achieve this which is known as Resource Stabilization.
+
+Terraform feels quicker to re-deploy failed deployments too as it doesn't rollback each resource similar to the way CloudFormation does. Also with Terraform you'd traditionally fail quicker if a resource type or variable did not match an expected value. With CloudFormation you would have only hit this at Stack Creation. 
+
+However, just this week CloudFormation announced the following - [Experience up to 40% faster stack creation with AWS CloudFormation](https://aws.amazon.com/about-aws/whats-new/2024/03/aws-cloudformation-40-percent-faster-stack-creation/), I'm yet to experiment with this new `CONFIGURATION_COMPLETE` state but it looks like Stabilization is being performed in parallel now. 
+
+So while Terraform can be faster to deploy resources, you mightn't get that baked in stabilisation that comes with CloudFormation. Terraform does have better parallelism capabilities though.
+
+### Associated Toolsets & Accessories
+
+
+### Programming and Dev Experience 
+
 
 ### Future of Both Tools
 
@@ -70,4 +143,10 @@ data "aws_apigatewayv2_domain_name" "example" {
 
 ## Conclusion
 
-Both CloudFormation and Terraform have their strengths and areas for improvement. My personal experience has shown me the nuances of each, and I believe the choice between them often depends on specific project needs, organizational context, and the desired breadth of cloud services. I look forward to continuing to explore these tools and sharing more insights with you.
+Both CloudFormation and Terraform have their strengths and areas for improvement. My personal experience has shown me the nuances of each, and I believe the choice between them often depends mainly on the projects needs and organizational context. For example, anything multi-cloud you're not choosing CloudFormation. 
+
+I like to think that within an enterprise you can use both. Either or. As long as there's the correct tooling in place to use Terraform well and in a consistent manner. This is where the toolsets and accessories become more important. 
+
+I also wouldn't turn anyone away from using the `aws_cloudformation_stack` [terraform resource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudformation_stack), while it may appear to be an antipattern it can combine the best of worlds at times. 
+
+Having said that, with the recent improvements CloudFormation has made and the changes in licencing and potential uncertainty with Terraform I would have to crown the IaC winer in my opinion as ... CloudFormation. 
