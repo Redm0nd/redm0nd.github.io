@@ -1,0 +1,41 @@
+---
+layout: post
+title: "CloudFormation vs. Terraform in 2024"
+date: 2024-03-18 08:00:30 +0100
+categories: jekyll update
+published: true
+---
+
+# Comparing CloudFormation and Terraform in 2014: An "Expert's" Insight
+
+## Preface
+
+Welcome to another deep dive into the world of Infrastructure as Code (IaC). My journey with IaC began in 2018, focusing exclusively on CloudFormation. Over the years, I honed my skills to become a Subject Matter Expert in CloudFormation, leveraging its capabilities within AWS. However, in 2022, my career took an exciting turn when I joined Workhuman, where Terraform is the go-to tool for all things IaC. This transition offered me a unique perspective on both tools, and in this post, I'll share my insights, comparing CloudFormation and Terraform across various dimensions.
+
+### Ecosystem
+
+**CloudFormation:** As a native AWS service, CloudFormation is tightly integrated with AWS, providing out-of-the-box support for almost every AWS resource. Its ecosystem is robust, with a wealth of templates and a supportive community. However, it can be somewhat insular, primarily catering to AWS resources.
+
+**Terraform:** Terraform's ecosystem is expansive, supporting multiple providers beyond just AWS. Its modular approach, with the use of Terraform Registry, offers a vast collection of modules contributed by the community, enhancing its adaptability and extensibility across various cloud platforms and services.
+
+### Compatibility/Support
+
+**CloudFormation:** Being an AWS-native tool, CloudFormation offers unparalleled support for new AWS features and services. However, its compatibility with non-AWS resources is limited, which can be a constraint for multi-cloud or hybrid cloud environments.
+
+**Terraform:** Terraform shines in its ability to manage resources across different cloud providers. Its provider model allows for seamless integration with AWS, Azure, Google Cloud, and more, making it a versatile choice for multi-cloud strategies.
+
+### Speed
+
+**CloudFormation:** CloudFormation's execution speed is generally consistent, benefiting from direct integration with AWS. However, the speed can vary based on the complexity and size of the templates.
+
+**Terraform:** Terraform is known for its efficient execution, particularly with its parallelism capabilities, which can significantly reduce deployment times. However, its speed can also depend on the specific configuration and the state management approach.
+
+### Future of Both Tools
+
+**CloudFormation:** As AWS continues to evolve, CloudFormation is expected to remain a key player, potentially expanding its capabilities and integration with other AWS services. Its future likely includes enhancements in usability and template management.
+
+**Terraform:** Terraform's trajectory is towards broader ecosystem support, enhanced state management, and improved collaboration features. Its adaptability and community-driven development suggest a future where it remains a dominant force in the IaC landscape, accommodating evolving cloud technologies and practices.
+
+## Conclusion
+
+Both CloudFormation and Terraform have their strengths and areas for improvement. My personal experience has shown me the nuances of each, and I believe the choice between them often depends on specific project needs, organizational context, and the desired breadth of cloud services. I look forward to continuing to explore these tools and sharing more insights with you.
