@@ -8,6 +8,18 @@ published: true
 
 # Passing Properties from S3 to Batch via EventBridge
 
+## Table of Contents
+
+1. [Overview of the Workflow](#overview-of-the-workflow)
+2. [Prerequisites](#prerequisites)
+3. [Step-by-Step Implementation](#step-by-step-implementation)
+    1. [S3 Bucket Setup](#1-s3-bucket-setup)
+    2. [Create EventBridge Rule](#2-create-eventbridge-rule)
+    3. [Define the Input Transformer](#3-define-the-input-transformer)
+    4. [Create Batch Job Definition](#4-create-batch-job-definition)
+    5. [Finalize and Deploy](#5-finalize-and-deploy)
+4. [Conclusion](#conclusion)
+
 In AWS, connecting different services seamlessly is a key to building robust, automated workflows. A common scenario is passing properties from an S3 event to an AWS Batch job using EventBridge. This workflow allows you to trigger a Batch job when a specific event happens in an S3 bucket, passing along important metadata or configurations as part of the job's environment variables.
 
 In this blog post, we'll explore how to implement this architecture using Infrastructure as Code (IaC) with Terraform. This approach ensures your infrastructure is version-controlled, repeatable, and scalable.
