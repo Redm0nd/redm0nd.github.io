@@ -47,17 +47,17 @@ Before we dive into the setup, ensure you have the following:
 
 First, you need an S3 bucket where your files will be uploaded. This bucket will emit events that will trigger the AWS Batch jobs.
 
-\`\`\`hcl
+```hcl
 resource "aws_s3_bucket" "example_bucket" {
   bucket = "my-event-trigger-bucket"
 }
-\`\`\`
+```
 
 ### 2. Create EventBridge Rule
 
 Next, create an EventBridge rule that listens for specific events from the S3 bucket. This rule will filter for events like \`s3:ObjectCreated:*\` and trigger the Batch job.
 
-\`\`\`hcl
+```hcl
 resource "aws_cloudwatch_event_rule" "s3_event_rule" {
   name        = "s3-event-rule"
   event_pattern = <<EOF
@@ -73,13 +73,13 @@ resource "aws_cloudwatch_event_rule" "s3_event_rule" {
 }
 EOF
 }
-\`\`\`
+```
 
 ### 3. Define the Input Transformer
 
 The Input Transformer in EventBridge allows you to manipulate the event data before passing it to the Batch job. For example, you can extract the S3 bucket name and object key from the event and pass them as environment variables.
 
-\`\`\`hcl
+```hcl
 resource "aws_cloudwatch_event_target" "batch_target" {
   rule = aws_cloudwatch_event_rule.s3_event_rule.name
   arn  = aws_batch_job_queue.my_job_queue.arn
@@ -105,13 +105,13 @@ resource "aws_cloudwatch_event_target" "batch_target" {
 EOF
   }
 }
-\`\`\`
+```
 
 ### 4. Create Batch Job Definition
 
 Finally, define the Batch job that will be triggered. The job definition should include the environment variables that are passed from the EventBridge Input Transformer.
 
-\`\`\`hcl
+```hcl
 resource "aws_batch_job_definition" "my_job_definition" {
   name = "my-batch-job-definition"
 
@@ -133,7 +133,7 @@ resource "aws_batch_job_definition" "my_job_definition" {
 
   type = "container"
 }
-\`\`\`
+```
 
 ### 5. Finalize and Deploy
 
