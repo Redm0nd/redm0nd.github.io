@@ -150,7 +150,7 @@ Both tools here perform similarly in this regard with CloudFormation and Terrafo
 
 When using [Open Policy Agent](https://www.cncf.io/projects/open-policy-agent-opa/) CloudFormation allows you to use hooks which can be finicky with OPA as hooks only support Python or Java. Because of this, you need the OPA CFN Hook which does work. If you really want to use OPA with Terraform you'll need to pay for Terraform Cloud:
 
-![](image of OPAL in tf)
+![OPA in Terraform](../images/opal_tf.png)
 
 [checkov](https://github.com/bridgecrewio/checkov) is also useful for both CFN and TF and is free _for now_. The CDK also supports features for validation during synthesis time via [CfnGuardValidator](https://github.com/cdklabs/cdk-validator-cfnguard) and supports OPA and Chekov.  
 
