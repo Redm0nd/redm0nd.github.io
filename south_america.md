@@ -1,4 +1,4 @@
-git co---
+---
 layout: default
 title: Travel
 permalink: /travel/
