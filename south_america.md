@@ -1,6 +1,6 @@
 ---
 layout: default
-title: South America 2023
+title: Travel
 ---
 
 # South America
