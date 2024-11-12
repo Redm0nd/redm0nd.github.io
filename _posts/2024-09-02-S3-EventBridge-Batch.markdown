@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Passing Properties from S3 to Batch via EventBridge"
-date: 2024-09-03 08:00:30 +0100
+date: 2024-09-02 08:00:30 +0100
 tags: aws IaC s3 batch terraform
-published: false
+published: true
 ---
 
 # Passing Properties from S3 to Batch via EventBridge

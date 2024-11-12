@@ -187,7 +187,7 @@ CloudFormation definitely comes out second in this contest as the more primitive
 
 **CloudFormation:** As AWS continues to evolve, CloudFormation is expected to remain a key player, potentially expanding its capabilities and integration with other AWS services. Its future likely includes enhancements in usability and template management. With the additional abstraction of the CDK, I wonder will we ever see a rebuilt CFN engine that doesn't translate go, typescript or python code back in to JSON or YAML templates like the CDK does - but today this is where we're at. 
 
-**Terraform:** Terraform's trajectory is towards broader ecosystem support, enhanced state management, and improved collaboration features. Its adaptability and community-driven development suggest a future where it remains a dominant force in the IaC landscape, accommodating evolving cloud technologies and practices.
+**Terraform:** I'm not sure exactly where Terraform's trajectory is going to go. With the introduction of Terraforms licencing, the recent creation of OpenTofu and the delays in introducing new resources I'm beginning to think that Terraform are going to push on Terraform Cloud and begin to cash in on what a great tool it has been over the years. I would not be surprised to see them enforce billing on Enterprise customers or be acquired this year. Having said that, I think they will look to develop towards broader ecosystem support and implement more providers. 
 
 ## Conclusion
 
