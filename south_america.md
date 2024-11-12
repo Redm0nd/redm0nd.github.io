@@ -8,21 +8,21 @@ permalink: /travel/
 
 Blog posts related to South America travel 2023:
 
-- [Quito, Ecuador](/southamerica/quito)
-- [Cuyabeno, Ecuador](/southamerica/cuyabeno)
-- [Lima, Peru](/southamerica/lima)
-- [Paracas, Peru](/southamerica/paracas)
-- [Huacachina, Peru](/southamerica/huacachina)
+- [Quito, Ecuador](/travel/quito)
+- [Cuyabeno, Ecuador](/travel/cuyabeno)
+- [Lima, Peru](/travel/lima)
+- [Paracas, Peru](/travel/paracas)
+- [Huacachina, Peru](/travel/huacachina)
 
 ## Places to eat:
 
 ## Galleries:
 
-- [Quito, Ecuador](/southamerica/quito)
-- [Cuyabeno, Ecuador](/southamerica/cuyabeno)
-- [Lima, Peru](/southamerica/lima)
-- [Paracas, Peru](/southamerica/paracas
-- [Huacachina, Peru](/southamerica/huacachina)
+- [Quito, Ecuador](/travel/quito)
+- [Cuyabeno, Ecuador](/travel/cuyabeno)
+- [Lima, Peru](/travel/lima)
+- [Paracas, Peru](/travel/paracas)
+- [Huacachina, Peru](/travel/huacachina)
 
 
 ## Costs:
