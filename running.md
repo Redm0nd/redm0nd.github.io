@@ -106,15 +106,15 @@ My running journey and race records.
 .sortable-table th,
 .sortable-table td {
   padding: 12px 15px;
-  border: 1px solid #dddddd;
+  border: 1px solid var(--table-border, #dddddd);
 }
 
 .sortable-table tbody tr {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid var(--table-border, #dddddd);
 }
 
 .sortable-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
+  background-color: var(--table-stripe, #f3f3f3);
 }
 
 .upcoming-race {
@@ -127,7 +127,7 @@ My running journey and race records.
 }
 
 .sortable-table tbody tr:hover {
-  background-color: #f1f1f1;
+  background-color: var(--table-hover, #f1f1f1);
   cursor: pointer;
 }
 
@@ -151,34 +151,7 @@ My running journey and race records.
   color: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  .sortable-table {
-    background-color: var(--background-color, #1a1a1a);
-    color: var(--text-color, #ffffff);
-  }
-
-  .sortable-table th,
-  .sortable-table td {
-    border-color: #444;
-  }
-
-  .sortable-table tbody tr:nth-of-type(even) {
-    background-color: #2a2a2a;
-  }
-
-  .upcoming-race {
-    background-color: #1e3a2e !important;
-    border-left: 4px solid #28a745;
-  }
-
-  .upcoming-race:nth-of-type(even) {
-    background-color: #2a4a3a !important;
-  }
-
-  .sortable-table tbody tr:hover {
-    background-color: #333;
-  }
-}
+/* Theme-aware styles are now handled in assets/css/style.scss */
 </style>
 
 <script>
@@ -238,7 +211,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Clear all headers in this table
         headers.forEach(h => {
           h.classList.remove('asc', 'desc');
-          h.innerHTML = h.innerHTML.replace(' ↑', '').replace(' ↓', '') + ' ↕';
+          // Remove all existing arrows and reset to neutral
+          const originalText = h.innerHTML.replace(/ [↑↓↕]/g, '');
+          h.innerHTML = originalText + ' ↕';
         });
 
         // Determine sort direction
@@ -251,7 +226,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Add class and arrow to current header
         this.classList.add(direction);
-        this.innerHTML = this.innerHTML.replace(' ↕', '');
+        // Remove neutral arrow and add appropriate directional arrow
+        const originalText = this.innerHTML.replace(/ [↑↓↕]/g, '');
+        this.innerHTML = originalText;
 
         // Sort the table
         sortTable(column, direction);
@@ -263,13 +240,15 @@ document.addEventListener('DOMContentLoaded', function() {
       sortTable('date', 'desc');
       const dateHeader = table.querySelector('[data-sort="date"]');
       dateHeader.classList.add('desc');
-      dateHeader.innerHTML = dateHeader.innerHTML.replace(' ↕', '');
+      const originalText = dateHeader.innerHTML.replace(/ [↑↓↕]/g, '');
+      dateHeader.innerHTML = originalText;
       currentSort = { column: 'date', direction: 'desc' };
     } else if (table.classList.contains('upcoming-races')) {
       sortTable('date', 'asc');
       const dateHeader = table.querySelector('[data-sort="date"]');
       dateHeader.classList.add('asc');
-      dateHeader.innerHTML = dateHeader.innerHTML.replace(' ↕', '');
+      const originalText = dateHeader.innerHTML.replace(/ [↑↓↕]/g, '');
+      dateHeader.innerHTML = originalText;
       currentSort = { column: 'date', direction: 'asc' };
     }
   });
