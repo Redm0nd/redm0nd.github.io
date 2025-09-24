@@ -1,0 +1,47 @@
+- date: "2025-10-26"
+  race: "Dublin Marathon"
+  distance: 42.195
+  time: ""
+  location: "Dublin, Ireland"
+  notes: ""
+  status: "upcoming"
+
+- date: "2025-09-21"
+  race: "Dublin Half Marathon"
+  distance: 21.1
+  time: "01:24:07"
+  location: "Dublin, Ireland"
+  notes: "PB"
+  status: "completed"
+
+- date: "2025-04-28"
+  race: "Madrid Half Marathon"
+  distance: 21.1
+  time: "01:32:11"
+  location: "Madrid, Spain"
+  notes: "First Half Marathon"
+  status: "completed"
+
+- date: "2025-04-27"
+  race: "Madrid Half Marathon"
+  distance: 21.1
+  time: "01:29:32"
+  location: "Madrid, Spain"
+  notes: ""
+  status: "completed"
+
+- date: "2024-10-27"
+  race: "Dublin Marathon"
+  distance: 42.195
+  time: "03:33:21"
+  location: "Dublin, Ireland"
+  notes: ""
+  status: "completed"
+
+- date: "2024-09-14"
+  race: "Ratoath Half Marathon"
+  distance: 21.1
+  time: "01:29:11"
+  location: "Ratoath, Meath"
+  notes: "Half Marathon PB"
+  status: "completed"
