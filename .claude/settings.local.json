@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(bundle install)",
+      "Bash(bundle exec jekyll serve --port 4001)",
+      "Read(//opt/homebrew/lib/ruby/gems/2.7.0/gems/minima-2.5.1/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
