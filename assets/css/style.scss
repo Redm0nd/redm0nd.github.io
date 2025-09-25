@@ -2,3 +2,207 @@
 ---
 
 @import "minima";
+
+// Theme switching variables
+:root {
+  --bg-color: #{$background-color};
+  --text-color: #{$text-color};
+  --brand-color: #{$brand-color};
+  --grey-color: #{$grey-color};
+  --grey-color-light: #{$grey-color-light};
+  --grey-color-dark: #{$grey-color-dark};
+}
+
+// Dark theme colors
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #e8e8e8;
+  --brand-color: #79b8ff;
+  --grey-color: #828282;
+  --grey-color-light: #333333;
+  --grey-color-dark: #999999;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+// Auto detect system preference when no manual preference is set
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg-color: #1a1a1a;
+    --text-color: #e8e8e8;
+    --brand-color: #79b8ff;
+    --grey-color: #828282;
+    --grey-color-light: #333333;
+    --grey-color-dark: #999999;
+
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+  }
+
+  :root:not([data-theme]) body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+  }
+
+  :root:not([data-theme]) .site-header {
+    background-color: var(--bg-color) !important;
+    border-bottom: 1px solid var(--grey-color-light);
+  }
+
+  :root:not([data-theme]) .page-content {
+    background-color: var(--bg-color) !important;
+  }
+
+  :root:not([data-theme]) .wrapper {
+    background-color: var(--bg-color) !important;
+  }
+
+  :root:not([data-theme]) .site-nav .page-link {
+    color: var(--text-color) !important;
+  }
+
+  :root:not([data-theme]) .post-meta {
+    color: var(--grey-color) !important;
+  }
+
+  :root:not([data-theme]) .post-link {
+    color: var(--text-color) !important;
+  }
+
+  :root:not([data-theme]) .post-title,
+  :root:not([data-theme]) h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color) !important;
+  }
+
+  :root:not([data-theme]) .post-content {
+    color: var(--text-color) !important;
+  }
+
+  :root:not([data-theme]) .site-footer {
+    background-color: var(--bg-color) !important;
+    border-top: 1px solid var(--grey-color-light);
+    color: var(--text-color) !important;
+  }
+
+  :root:not([data-theme]) .footer-heading {
+    color: var(--text-color) !important;
+  }
+
+  :root:not([data-theme]) .contact-list,
+  :root:not([data-theme]) .social-media-list {
+    color: var(--text-color) !important;
+  }
+
+  :root:not([data-theme]) pre,
+  :root:not([data-theme]) code {
+    background-color: var(--grey-color-light) !important;
+    color: var(--text-color) !important;
+  }
+
+  :root:not([data-theme]) a {
+    color: var(--brand-color) !important;
+  }
+
+  :root:not([data-theme]) a:visited {
+    color: #bb86fc !important;
+  }
+}
+
+// Light theme (explicit)
+[data-theme="light"] {
+  --bg-color: #{$background-color};
+  --text-color: #{$text-color};
+  --brand-color: #{$brand-color};
+  --grey-color: #{$grey-color};
+  --grey-color-light: #{$grey-color-light};
+  --grey-color-dark: #{$grey-color-dark};
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+// Dark theme styles
+[data-theme="dark"] body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .site-header {
+  background-color: var(--bg-color) !important;
+  border-bottom: 1px solid var(--grey-color-light);
+}
+
+[data-theme="dark"] .page-content {
+  background-color: var(--bg-color) !important;
+}
+
+[data-theme="dark"] .wrapper {
+  background-color: var(--bg-color) !important;
+}
+
+[data-theme="dark"] .site-nav .page-link {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .post-meta {
+  color: var(--grey-color) !important;
+}
+
+[data-theme="dark"] .post-link {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .post-title,
+[data-theme="dark"] h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .post-content {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .site-footer {
+  background-color: var(--bg-color) !important;
+  border-top: 1px solid var(--grey-color-light);
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .footer-heading {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .contact-list,
+[data-theme="dark"] .social-media-list {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] pre,
+[data-theme="dark"] code {
+  background-color: var(--grey-color-light) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] a {
+  color: var(--brand-color) !important;
+}
+
+[data-theme="dark"] a:visited {
+  color: #bb86fc !important;
+}
+
+// Theme toggle button styles
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--grey-color);
+  color: var(--text-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+
+  &:hover {
+    background-color: var(--grey-color-light);
+  }
+}

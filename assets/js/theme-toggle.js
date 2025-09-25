@@ -1,71 +1,107 @@
-// Theme toggle functionality
 (function() {
   'use strict';
 
-  const THEME_KEY = 'theme-preference';
+  // Theme management
+  const STORAGE_KEY = 'theme-preference';
+  const THEME_AUTO = 'auto';
+  const THEME_LIGHT = 'light';
+  const THEME_DARK = 'dark';
 
-  // Get theme preference from localStorage or system preference
-  function getThemePreference() {
-    const stored = localStorage.getItem(THEME_KEY);
-    if (stored) {
-      return stored;
-    }
-
-    // Check system preference
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  function getStoredTheme() {
+    return localStorage.getItem(STORAGE_KEY);
   }
 
-  // Apply theme to document
+  function setStoredTheme(theme) {
+    localStorage.setItem(STORAGE_KEY, theme);
+  }
+
+  function getSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? THEME_DARK : THEME_LIGHT;
+  }
+
+  function getActiveTheme() {
+    const stored = getStoredTheme();
+    if (stored === THEME_AUTO || !stored) {
+      return getSystemTheme();
+    }
+    return stored;
+  }
+
   function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem(THEME_KEY, theme);
+    const root = document.documentElement;
+    const stored = getStoredTheme();
 
-    // Update toggle button icon
-    const toggleButton = document.getElementById('theme-toggle');
-    if (toggleButton) {
-      const icon = toggleButton.querySelector('.theme-toggle-icon');
-      if (icon) {
-        icon.textContent = theme === 'dark' ? '☀️' : '🌙';
-      }
+    if (stored === THEME_AUTO || !stored) {
+      // Remove data-theme attribute to let CSS media queries handle it
+      root.removeAttribute('data-theme');
+    } else {
+      // Set explicit theme
+      root.setAttribute('data-theme', theme);
     }
   }
 
-  // Toggle between light and dark themes
-  function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    applyTheme(newTheme);
+  function updateToggleButton() {
+    const button = document.querySelector('.theme-toggle');
+    if (!button) return;
+
+    const stored = getStoredTheme();
+    const active = getActiveTheme();
+
+    if (stored === THEME_AUTO || !stored) {
+      button.textContent = `🌓 Auto (${active === THEME_DARK ? 'Dark' : 'Light'})`;
+    } else {
+      button.textContent = active === THEME_DARK ? '🌙 Dark' : '☀️ Light';
+    }
   }
 
-  // Initialize theme when DOM is loaded
+  function cycleTheme() {
+    const stored = getStoredTheme();
+    let nextTheme;
+
+    if (!stored || stored === THEME_AUTO) {
+      // Auto -> Light
+      nextTheme = THEME_LIGHT;
+    } else if (stored === THEME_LIGHT) {
+      // Light -> Dark
+      nextTheme = THEME_DARK;
+    } else {
+      // Dark -> Auto
+      nextTheme = THEME_AUTO;
+    }
+
+    setStoredTheme(nextTheme);
+    applyTheme(getActiveTheme());
+    updateToggleButton();
+  }
+
   function initTheme() {
-    const theme = getThemePreference();
-    applyTheme(theme);
-
-    // Add click listener to toggle button
-    const toggleButton = document.getElementById('theme-toggle');
-    if (toggleButton) {
-      toggleButton.addEventListener('click', toggleTheme);
-    }
+    // Apply initial theme
+    applyTheme(getActiveTheme());
+    updateToggleButton();
 
     // Listen for system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-      // Only auto-switch if user hasn't manually set a preference
-      const storedPreference = localStorage.getItem(THEME_KEY);
-      if (!storedPreference) {
-        applyTheme(e.matches ? 'dark' : 'light');
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+      const stored = getStoredTheme();
+      if (stored === THEME_AUTO || !stored) {
+        applyTheme(getActiveTheme());
+        updateToggleButton();
       }
     });
+
+    // Add event listener to toggle button
+    const button = document.querySelector('.theme-toggle');
+    if (button) {
+      button.addEventListener('click', cycleTheme);
+    }
   }
 
-  // Initialize immediately if DOM is already loaded, otherwise wait
+  // Initialize when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initTheme);
   } else {
     initTheme();
   }
 
-  // Apply theme immediately to prevent flash
-  const initialTheme = getThemePreference();
-  document.documentElement.setAttribute('data-theme', initialTheme);
+  // Apply initial theme immediately to prevent flash
+  applyTheme(getActiveTheme());
 })();
