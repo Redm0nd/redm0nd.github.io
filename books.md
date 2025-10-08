@@ -6,7 +6,7 @@ permalink: /books/
 
 # Books
 
-My reading journey - books I've read and currently reading.
+Books I've read and currently reading.
 
 ## To Read
 - [The Odyssey](https://www.amazon.co.uk/Odyssey-Homer/dp/0199215190) by Homer
