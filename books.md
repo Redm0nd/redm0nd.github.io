@@ -8,48 +8,24 @@ permalink: /books/
 
 My reading journey - books I've read and currently reading.
 
+## To Read
+- [The Odyssey](https://www.amazon.co.uk/Odyssey-Homer/dp/0199215190) by Homer
+- [Meditations](https://www.amazon.co.uk/Meditations-Penguin-Classics-Marcus-Aurelius/dp/0140449337) by Marcus Aurelius
+
 ## Currently Reading
+- [The Antisocial Network](https://www.amazon.co.uk/Anti-Social-Network-Metrich/dp/B07Y6QZR8G) by Ben Mezrich
 
-| Title | Author | Started | Progress | Genre |
-|-------|--------|---------|----------|-------|
-| The DevOps Handbook | Gene Kim, Patrick Debois | 2024-01-15 | 65% | Technology |
-| Atomic Habits | James Clear | 2024-02-01 | 30% | Self-Development |
+## 2025
+- [How to Win the Premiership](https://www.amazon.co.uk/How-Win-Premiership-Ian-Graham/dp/1788701187) by Ian Graham
+- [ADHD Unpacked](https://www.amazon.co.uk/ADHD-Unpacked-Changing-Autistic-diagnosis/dp/1911623636) by Alex Conner and James Brown
+- [Hope](https://www.amazon.co.uk/Hope-Pope-Francis/dp/0316416634) by Pope Francis
+- [The Trading Game](https://www.amazon.co.uk/Trading-Game-Rugby-business-success/dp/000717085X) by Gary Stevenson
+- [Supremacy](https://www.amazon.co.uk/Supremacy-Power-Growth-Business/dp/B0C4R8JQW7) by Parmy Olson
 
-## Completed Books
-
-### 2024
-
-| Title | Author | Completed | Rating | Genre | Notes |
-|-------|--------|-----------|--------|-------|-------|
-| The Phoenix Project | Gene Kim | 2024-01-10 | ⭐⭐⭐⭐⭐ | Technology | Excellent DevOps novel |
-| Educated | Tara Westover | 2024-03-22 | ⭐⭐⭐⭐ | Memoir | Powerful story |
-| Born to Run | Christopher McDougall | 2024-02-14 | ⭐⭐⭐⭐ | Sports/Health | Great running inspiration |
-
-### 2023
-
-| Title | Author | Completed | Rating | Genre | Notes |
-|-------|--------|-----------|--------|-------|-------|
-| The Unicorn Project | Gene Kim | 2023-12-05 | ⭐⭐⭐⭐ | Technology | Good follow-up to Phoenix Project |
-| Sapiens | Yuval Noah Harari | 2023-11-18 | ⭐⭐⭐⭐⭐ | History/Philosophy | Mind-blowing perspective |
-| The Pragmatic Programmer | Andy Hunt, Dave Thomas | 2023-09-30 | ⭐⭐⭐⭐⭐ | Technology | Essential for developers |
-
-## Reading Goals
-
-- [ ] Read 24 books in 2024 (2 per month)
-- [ ] Complete AWS Solution Architect study guides
-- [ ] Read more fiction novels
-- [ ] Explore Irish authors
-
-## Favorite Genres
-
-1. Technology & Programming
-2. Biographies & Memoirs
-3. History & Philosophy
-4. Sports & Health
-5. Fiction
-
-## Book Recommendations
-
-*Always happy to discuss books or get recommendations! Feel free to reach out.*
-
-*Last updated: {{ site.time | date: "%B %Y" }}*
+## 2024
+- [Chip War](https://www.amazon.co.uk/Chip-War-Epic-Story/dp/B09MCT77R7) by Chris Miller
+- [Algebra of Happiness](https://www.amazon.co.uk/Algebra-Happiness-Find-Infinite-Life/dp/B08XKJ9XRM) by Scott Galloway
+- [Feel Good Productivity](https://www.amazon.co.uk/Feel-Good-Productivity-Less-Get/dp/B0BLJC8LJB) by Ali Abdaal
+- [Ultra-Processed People](https://www.amazon.co.uk/Ultra-Processed-People-Surival-Guide-Junk/dp/B0B5B4Q5K9) by Chris van Tulleken
+- [The Organized Mind](https://www.amazon.co.uk/Organized-Mind-Thinking-Solo-Crowds/dp/0141970493) by Daniel Levitin
+- [Born to Be a Footballer](https://www.amazon.co.uk/Born-Footballer-George-Best-Players/dp/0008200947) by Liam Brady
