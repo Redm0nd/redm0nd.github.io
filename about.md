@@ -6,14 +6,14 @@ permalink: /about/
 
 Hi, I'm Dylan Redmond.
 
-I'm a `Senior DevOps Engineer` based in Dublin, Ireland. I work at <a href="https://www.toasttab.com/" target="_blank">Toast</a>.
+I'm a `Senior DevOps Engineer` based in Dublin, Ireland.
 
 I studied Electronic and Computer Engineering at <a href="https://www.dcu.ie/" target="_blank">Dublin City University</a>.
 
 
 Before Toast, I worked at <a href="https://www.workhuman.com/" target="_blank">Workhuman</a>, <a href="https://aws.amazon.com/" target="_blank">AWS</a> & <a href="https://www.paddypowerbetfair.com" target="_blank">Paddy Power Betfair</a>.
 
-At Workhuman I was a Senior Cloud Infrastructure Engineer responsible for managing and scaling our AWS infrastructure and building Terraform modules for engineering teams to deploy their services on top of.
+At Workhuman as a Senior Cloud Infrastructure Engineer I'm responsible for managing and scaling our AWS infrastructure and building Terraform modules for engineering teams to deploy their services on top of.
 
 I joined AWS in May 2020 as a Cloud Support Engineer in Dublin. In this role, I was responsible for supporting our Deployment, IaC and CICD tooling for our largest Enterprise customers. Became a <a href="https://aws.amazon.com/cloudformation/" target="_blank">CloudFormation</a> SME and interviewed 000's of candidates.
 
