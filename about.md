@@ -11,7 +11,7 @@ I'm a `Senior DevOps Engineer` based in Dublin, Ireland.
 I studied Electronic and Computer Engineering at <a href="https://www.dcu.ie/" target="_blank">Dublin City University</a>.
 
 
-Before Toast, I worked at <a href="https://www.workhuman.com/" target="_blank">Workhuman</a>, <a href="https://aws.amazon.com/" target="_blank">AWS</a> & <a href="https://www.paddypowerbetfair.com" target="_blank">Paddy Power Betfair</a>.
+I've worked at <a href="https://www.workhuman.com/" target="_blank">Workhuman</a>, <a href="https://aws.amazon.com/" target="_blank">AWS</a> & <a href="https://www.paddypowerbetfair.com" target="_blank">Paddy Power Betfair</a>.
 
 At Workhuman as a Senior Cloud Infrastructure Engineer I'm responsible for managing and scaling our AWS infrastructure and building Terraform modules for engineering teams to deploy their services on top of.
 
