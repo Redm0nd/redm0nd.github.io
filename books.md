@@ -9,13 +9,15 @@ permalink: /books/
 Books I've read and currently reading.
 
 ## To Read
+- [Source Code: My Beginnings](https://www.goodreads.com/book/show/213034913-source-code) by Bill Gates
 - [The Odyssey](https://www.amazon.co.uk/Odyssey-Homer/dp/0199215190) by Homer
 - [Meditations](https://www.amazon.co.uk/Meditations-Penguin-Classics-Marcus-Aurelius/dp/0140449337) by Marcus Aurelius
 
 ## Currently Reading
-- [The Antisocial Network](https://www.amazon.co.uk/Anti-Social-Network-Metrich/dp/B07Y6QZR8G) by Ben Mezrich
+- [The Racket](https://www.goodreads.com/book/show/204744031-the-racket) by Conor Niland
 
 ## 2025
+- [The Antisocial Network](https://www.amazon.co.uk/Anti-Social-Network-Metrich/dp/B07Y6QZR8G) by Ben Mezrich
 - [How to Win the Premiership](https://www.amazon.co.uk/How-Win-Premiership-Ian-Graham/dp/1788701187) by Ian Graham
 - [ADHD Unpacked](https://www.amazon.co.uk/ADHD-Unpacked-Changing-Autistic-diagnosis/dp/1911623636) by Alex Conner and James Brown
 - [Hope](https://www.amazon.co.uk/Hope-Pope-Francis/dp/0316416634) by Pope Francis
@@ -23,6 +25,7 @@ Books I've read and currently reading.
 - [Supremacy](https://www.amazon.co.uk/Supremacy-Power-Growth-Business/dp/B0C4R8JQW7) by Parmy Olson
 
 ## 2024
+- [Catch-22](https://www.goodreads.com/book/show/168668.Catch_22) by Joseph Heller
 - [Chip War](https://www.amazon.co.uk/Chip-War-Epic-Story/dp/B09MCT77R7) by Chris Miller
 - [Algebra of Happiness](https://www.amazon.co.uk/Algebra-Happiness-Find-Infinite-Life/dp/B08XKJ9XRM) by Scott Galloway
 - [Feel Good Productivity](https://www.amazon.co.uk/Feel-Good-Productivity-Less-Get/dp/B0BLJC8LJB) by Ali Abdaal
