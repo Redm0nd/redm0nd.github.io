@@ -9,14 +9,17 @@ permalink: /books/
 Books I've read and currently reading.
 
 ## To Read
-- [Source Code: My Beginnings](https://www.goodreads.com/book/show/213034913-source-code) by Bill Gates
 - [The Odyssey](https://www.amazon.co.uk/Odyssey-Homer/dp/0199215190) by Homer
 - [Meditations](https://www.amazon.co.uk/Meditations-Penguin-Classics-Marcus-Aurelius/dp/0140449337) by Marcus Aurelius
+- [Elon Musk](https://www.goodreads.com/book/show/122765395-elon-musk) by Walter Isaacson
 
 ## Currently Reading
-- [The Racket](https://www.goodreads.com/book/show/204744031-the-racket) by Conor Niland
+- [Aer Dogs](https://www.goodreads.com/book/show/202093604-aer-dogs) by Tom Lyons
+- [Code Dependent](https://www.goodreads.com/book/show/127282778-code-dependent) by Madhumita Murgia
 
 ## 2025
+- [Source Code: My Beginnings](https://www.goodreads.com/book/show/213034913-source-code) by Bill Gates
+- [The Racket](https://www.goodreads.com/book/show/204744031-the-racket) by Conor Niland
 - [The Antisocial Network](https://www.amazon.co.uk/Anti-Social-Network-Metrich/dp/B07Y6QZR8G) by Ben Mezrich
 - [How to Win the Premiership](https://www.amazon.co.uk/How-Win-Premiership-Ian-Graham/dp/1788701187) by Ian Graham
 - [ADHD Unpacked](https://www.amazon.co.uk/ADHD-Unpacked-Changing-Autistic-diagnosis/dp/1911623636) by Alex Conner and James Brown
