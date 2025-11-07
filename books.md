@@ -20,18 +20,18 @@ Books I've read and currently reading.
 ## 2025
 - [Source Code: My Beginnings](https://www.goodreads.com/book/show/213034913-source-code) by Bill Gates
 - [The Racket](https://www.goodreads.com/book/show/204744031-the-racket) by Conor Niland
-- [The Antisocial Network](https://www.amazon.co.uk/Anti-Social-Network-Metrich/dp/B07Y6QZR8G) by Ben Mezrich
-- [How to Win the Premiership](https://www.amazon.co.uk/How-Win-Premiership-Ian-Graham/dp/1788701187) by Ian Graham
-- [ADHD Unpacked](https://www.amazon.co.uk/ADHD-Unpacked-Changing-Autistic-diagnosis/dp/1911623636) by Alex Conner and James Brown
-- [Hope](https://www.amazon.co.uk/Hope-Pope-Francis/dp/0316416634) by Pope Francis
-- [The Trading Game](https://www.amazon.co.uk/Trading-Game-Rugby-business-success/dp/000717085X) by Gary Stevenson
-- [Supremacy](https://www.amazon.co.uk/Supremacy-Power-Growth-Business/dp/B0C4R8JQW7) by Parmy Olson
+- [The Antisocial Network](https://www.goodreads.com/book/show/57796397-the-antisocial-network) by Ben Mezrich
+- [How to Win the Premier League](https://www.goodreads.com/book/show/209194343-how-to-win-the-premier-league) by Ian Graham
+- [ADHD Unpacked](https://www.goodreads.com/book/show/221120724-adhd-unpacked) by Alex Conner and James Brown
+- [Hope](https://www.goodreads.com/book/show/220114692-hope) by Pope Francis
+- [The Trading Game](https://www.goodreads.com/book/show/188543465-the-trading-game) by Gary Stevenson
+- [Supremacy](https://www.goodreads.com/book/show/199809440-supremacy) by Parmy Olson
 
 ## 2024
 - [Catch-22](https://www.goodreads.com/book/show/168668.Catch_22) by Joseph Heller
-- [Chip War](https://www.amazon.co.uk/Chip-War-Epic-Story/dp/B09MCT77R7) by Chris Miller
-- [Algebra of Happiness](https://www.amazon.co.uk/Algebra-Happiness-Find-Infinite-Life/dp/B08XKJ9XRM) by Scott Galloway
-- [Feel Good Productivity](https://www.amazon.co.uk/Feel-Good-Productivity-Less-Get/dp/B0BLJC8LJB) by Ali Abdaal
-- [Ultra-Processed People](https://www.amazon.co.uk/Ultra-Processed-People-Surival-Guide-Junk/dp/B0B5B4Q5K9) by Chris van Tulleken
-- [The Organized Mind](https://www.amazon.co.uk/Organized-Mind-Thinking-Solo-Crowds/dp/0141970493) by Daniel Levitin
-- [Born to Be a Footballer](https://www.amazon.co.uk/Born-Footballer-George-Best-Players/dp/0008200947) by Liam Brady
+- [Chip War](https://www.goodreads.com/book/show/60321447-chip-war) by Chris Miller
+- [Algebra of Happiness](https://www.goodreads.com/book/show/42872963-the-algebra-of-happiness) by Scott Galloway
+- [Feel Good Productivity](https://www.goodreads.com/book/show/142402923-feel-good-productivity) by Ali Abdaal
+- [Ultra-Processed People](https://www.goodreads.com/book/show/200196183-ultra-processed-people) by Chris van Tulleken
+- [The Organized Mind](https://www.goodreads.com/book/show/18693669-the-organized-mind) by Daniel Levitin
+- [Born to Be a Footballer](https://www.goodreads.com/book/show/178821832-born-to-be-a-footballer) by Liam Brady
