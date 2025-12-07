@@ -11,13 +11,17 @@ Books I've read and currently reading.
 ## To Read
 - [The Odyssey](https://www.amazon.co.uk/Odyssey-Homer/dp/0199215190) by Homer
 - [Meditations](https://www.amazon.co.uk/Meditations-Penguin-Classics-Marcus-Aurelius/dp/0140449337) by Marcus Aurelius
-- [Elon Musk](https://www.goodreads.com/book/show/122765395-elon-musk) by Walter Isaacson
+- [Careless People]() by Sarah Wynn-Williams
+- [Punters]() by Aaron Rogan
+- [New York 2140]() by Kim Stanley Robinson
 
 ## Currently Reading
-- [Aer Dogs](https://www.goodreads.com/book/show/202093604-aer-dogs) by Tom Lyons
-- [Code Dependent](https://www.goodreads.com/book/show/127282778-code-dependent) by Madhumita Murgia
+- [Elon Musk](https://www.goodreads.com/book/show/122765395-elon-musk) by Walter Isaacson
+
 
 ## 2025
+- [Aer Dogs](https://www.goodreads.com/book/show/202093604-aer-dogs) by Tom Lyons
+- [Code Dependent](https://www.goodreads.com/book/show/127282778-code-dependent) by Madhumita Murgia
 - [Source Code: My Beginnings](https://www.goodreads.com/book/show/213034913-source-code) by Bill Gates
 - [The Racket](https://www.goodreads.com/book/show/204744031-the-racket) by Conor Niland
 - [The Antisocial Network](https://www.goodreads.com/book/show/57796397-the-antisocial-network) by Ben Mezrich
