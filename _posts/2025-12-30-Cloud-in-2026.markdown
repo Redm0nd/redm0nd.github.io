@@ -59,6 +59,8 @@ In 2026, expect to see more enterprises adopting Cloudflare for specific use cas
 
 Following tech and DevOps online provides a lot of information, but much of it feels generic and not focused on enterprise-scale challenges. I also find my time being spent on Twitter (X) and Reddit is increasing to the point that I don't like. While any time spent on those sites for me is not disirable they are often the place to get updates on new releases and follow people who publish content. Although in 2026 I'll be moving this to LinkedIn and Slack communities - mainly the AWS Builder Community Slack and the FinOps Slack. I've also recently purchased three O'Reilly books to get back to fundamentals and gain deeper knowledge. I'm looking forward to getting through these:
 
+![Books for learning](/assets/PC300272.JPG)
+
 I'm hoping these books will provide the solid foundation that online content often lacks. In a field moving as fast as cloud computing, it's easy to get caught up in the latest trends without understanding the underlying principles. These books should help bridge that gap.
 
 
