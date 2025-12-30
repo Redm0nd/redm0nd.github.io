@@ -9,17 +9,23 @@ permalink: /books/
 Books I've read and currently reading.
 
 ## To Read
+- [Punters](https://www.goodreads.com/book/show/58505727-punters) by Aaron Rogan
+- [Notes on being a man](https://www.goodreads.com/book/show/230733473-notes-on-being-a-man) by Scott Galloway
+- [Dark Squares](https://www.goodreads.com/book/show/223296276-dark-squares) by Danny Rensh
+- [Sacrifice](https://www.goodreads.com/book/show/222730591-sacrifice) by Oisin Murphy
+- [The Curious Case of Mike Lynch](https://www.goodreads.com/book/show/223319170-the-curious-case-of-mike-lynch) by Katie Prescott
 - [The Odyssey](https://www.amazon.co.uk/Odyssey-Homer/dp/0199215190) by Homer
 - [Meditations](https://www.amazon.co.uk/Meditations-Penguin-Classics-Marcus-Aurelius/dp/0140449337) by Marcus Aurelius
-- [Careless People]() by Sarah Wynn-Williams
-- [Punters]() by Aaron Rogan
 - [New York 2140]() by Kim Stanley Robinson
 
 ## Currently Reading
-- [Elon Musk](https://www.goodreads.com/book/show/122765395-elon-musk) by Walter Isaacson
+- [The Bailout Babies](https://www.goodreads.com/book/show/241485615-the-bailout-babies) by Adam Maguire
 
+## 2026
 
 ## 2025
+- [Careless People]() by Sarah Wynn-Williams
+- ~~[Elon Musk](https://www.goodreads.com/book/show/122765395-elon-musk) by Walter Isaacson~~ (did not finish)
 - [Aer Dogs](https://www.goodreads.com/book/show/202093604-aer-dogs) by Tom Lyons
 - [Code Dependent](https://www.goodreads.com/book/show/127282778-code-dependent) by Madhumita Murgia
 - [Source Code: My Beginnings](https://www.goodreads.com/book/show/213034913-source-code) by Bill Gates
