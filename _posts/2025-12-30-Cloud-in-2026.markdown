@@ -1,0 +1,67 @@
+---
+layout: post
+title: "The Cloud in 2026: Growth and Predictions"
+date: 2025-12-30 08:00:30 +0100
+tags: aws cloud devops platform
+published: true
+---
+
+# Cloud Computing in 2026: Evolution and Predictions
+
+## Table of Contents
+
+1. [Preface](#preface)
+2. [Platform Engineering at Scale](#platform-engineering-at-scale)
+3. [AI in DevOps: The Slop and the Promise](#ai-in-devops-the-slop-and-the-promise)
+4. [FinOps: Cost vs. Business Outcomes](#finops-cost-vs-business-outcomes)
+5. [Cloudflare's Growing Market Share](#cloudflares-growing-market-share)
+6. [Getting Back to Basics with Books](#getting-back-to-basics-with-books)
+7. [Conclusion](#conclusion)
+
+## Preface
+
+As 2025 comes to an end I thought I'd look ahead to 2026 and take some stock on the current state of DevOps/Platform Engineer and some general ramblings on what I think is to come this year and in the coming years. In some sense a lot has changed since I began working in DevOps in 2018 but at the same time some things stay the same. I think 2025 was the first year that we couldn't say a decade ago Kubernetes didn't exist and since then I have not managed to avoid manually scaling clusters and control planes as ETCD ran OOM due to growing pods or updating clusters in the old fashioned way (maybe EKS Auto Mode will solve that issue in 2026 though). In this post, I'll share my thoughts on what changed in the past year and what I expect to see in 2026. I feel with my experience working at different scales - from smaller teams to large enterprises with 000's of developers I've seen a lot of change but some things are staying the same. 
+
+## Platform Engineering at Scale
+
+Platform engineering has become a significant focus recently, and for good reason. From what I'm seeing almost all enterprises have adopted or are currently adopting internal develop platforms. Backstage from Spotify is still the defacto as it's open source however I would not knock the traditional set up of running Jenkins. A backstage IDP does have the feel of a frontend for triggering GitHub Actions and GitLab runners much like was done in the past with frontends for Jenkins. I do think we'll see growth in the IDP space especially with plugins to come with LLMs and chat bots to provision infrastructure via runners. 
+
+That said in smaller companies where a full-blown IDP isn't necessary. A well-crafted set of CLI tools, scripts, and documentation can achieve similar results without the overhead and it can also scale. A CLI tool with a specific set of instructions to allow devs to provision infrastructure can often have perfect results and be a crowd pleaser among devs without the bloat of dealing with an IDP with maintainance and downtime.
+
+## AI in DevOps: The Slop and the Promise
+
+2025 was very much the year AI become mainstream in developers lives and in DevOps. Tools for provisioning infrastructure from natural language are beginning to pop up and some of them seem promising. However, it's too early to say if these tools can reliably and safely provision production grade infrastructure that is SOX and PCI compliant amongst other things. MCPs for DataDog, Splunk and LLMs in general are at the stage where they can quickly point out a point of failure or issue when troubleshooting an issue. With the increase in lines of code outputted by these LLMs and approved by developers in to the codebase it will be interesting to see if troubleshooting and supporting production incidents is shifted left from SRE/DevOps Engineers and directly in to the hands of development teams. I would see that happening as a major pro for both but I don't think we're there yet. 
+
+Without appropriate context and well-crafted prompts, AI tools can generate outputs that fail in production environments. I've spent considerable time debugging Terraform configurations that seemed sound until they encountered edge cases or security requirements.
+
+Looking to 2026, I expect this technology to mature significantly. Companies will start more widespread use of gateway LLMs (https://llmgateway.io). Rather than having multiple places to use AI tools as is today, we'll see consolidation to preferred choices that integrate effectively with existing workflows. LLM gateways are a tool for this as they open up wider access to models, track usage and cost. 
+
+
+## FinOps: Cost vs. Business Outcomes
+
+Cost optimization is a passion of mine and with the spend in AI really should be of more importance than ever. But in practice, it can often be a hinderence to delivery at early stages and be treated as an afterthought. There's an old adage of optimising for business outcomes vs. optimising for cost and usually the business outcomes come first and optimisation after. 
+
+2026 might not be the year that FinOps goes full mainstream but it's quite a year for Anthropic, OpenAI and the chasing field in AI. Not to mention it's the second fiscal year of AI on public companies books. One of two things will happen from AI and it's increased efficiency there's no doubt there's an increase in productivty using the tools but if this doesn't in turn equate to an increase in revenue (ie. more money being spent by customers) then the other optimisation could be in the form of cost-reduction. Hopefully that is on the Cloud Bill rather than in headcount...
+
+For 2026 though, I expect FinOps to continue to grow and become more integrated into development processes. InfraCost is making this easy with direct code scanning and change management from within the PR. We'll also see growth from CloudZero and other cost management tools. Rather than separate teams conducting post-mortems on expensive deployments, we'll see cost considerations built into CI/CD pipelines and development workflows. Tools will provide real-time cost feedback, allowing developers to make informed decisions without sacrificing speed.
+
+The key will be finding the right balance - enough cost awareness to prevent waste, but not so much that it hinders innovation.
+
+## Cloudflare's Growing Market Share
+
+Cloudflare has been around for a while now and first came to my attention in 2020 when I saw some smaller customers in AWS leaving CloudFront for Cloudflare but back then they didn't have the product offering for compute that AWS had. This was followed by their R2 offering which offers no egress and cheaper storage costs to S3. I believe they'll continue to grow and start taking enterprise business from AWS. Their edge network and security offerings have matured significantly, providing compelling alternatives to traditional cloud providers. And in 2026 while I haven't used their Workers service I think it might be the year I dip my toes - and from an AWS man that is telling.
+
+In 2026, expect to see more enterprises adopting Cloudflare for specific use cases, potentially leading to hybrid architectures where AWS handles core compute while Cloudflare manages edge services and security. So even if their compute runs on ECS or EKS it might be fronted by CloudFlare with some workers handling event driven processing with R2. This is dependent on the cost side of things I mentioned above coming in to play. 
+
+## Getting Back to Basics with Books
+
+Following tech and DevOps online provides a lot of information, but much of it feels generic and not focused on enterprise-scale challenges. I also find my time being spent on Twitter (X) and Reddit is increasing to the point that I don't like. While any time spent on those sites for me is not disirable they are often the place to get updates on new releases and follow people who publish content. Although in 2026 I'll be moving this to LinkedIn and Slack communities - mainly the AWS Builder Community Slack and the FinOps Slack. I've also recently purchased three O'Reilly books to get back to fundamentals and gain deeper knowledge. I'm looking forward to getting through these:
+
+I'm hoping these books will provide the solid foundation that online content often lacks. In a field moving as fast as cloud computing, it's easy to get caught up in the latest trends without understanding the underlying principles. These books should help bridge that gap.
+
+
+## Conclusion
+
+So, in my opinion 2026 will continue to be a year of maturation in DevOps and Platform Engineering. IDPs will continue to grow in popularity for enteprises and AI will become more integrated to workflows but at a more refined scale - likely with single providers (Copilot or Claude Code - not both), and cost optimization might not be baked into development processes yet but will continue to pop up. We'll continue to see Cloudflare rise and I'm looking forward to following any product announcements they have this year. These might challenge traditional cloud providers, and a renewed focus on fundamentals will ensure sustainable growth.
+
+From my experience, the most successful organizations will be those that balance innovation with pragmatism, adopting new technologies while maintaining a strong foundation. Some that go 'all-in' on AI will bear fruit, while others just won't see a payoff and will have to pivot back to focussing on what their products where before AI and see where they can continue to grow there. As we enter 2026, I'm excited to see how these trends play out in the real world and we'll see if I'm on the money or completely off the mark...
