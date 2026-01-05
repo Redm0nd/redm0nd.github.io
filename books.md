@@ -9,7 +9,6 @@ permalink: /books/
 Books I've read and currently reading.
 
 ## To Read
-- [Punters](https://www.goodreads.com/book/show/58505727-punters) by Aaron Rogan
 - [Notes on being a man](https://www.goodreads.com/book/show/230733473-notes-on-being-a-man) by Scott Galloway
 - [Dark Squares](https://www.goodreads.com/book/show/223296276-dark-squares) by Danny Rensh
 - [Sacrifice](https://www.goodreads.com/book/show/222730591-sacrifice) by Oisin Murphy
@@ -19,9 +18,10 @@ Books I've read and currently reading.
 - [New York 2140]() by Kim Stanley Robinson
 
 ## Currently Reading
-- [The Bailout Babies](https://www.goodreads.com/book/show/241485615-the-bailout-babies) by Adam Maguire
+- [Punters](https://www.goodreads.com/book/show/58505727-punters) by Aaron Rogan
 
 ## 2026
+- [The Bailout Babies](https://www.goodreads.com/book/show/241485615-the-bailout-babies) by Adam Maguire
 
 ## 2025
 - [Careless People]() by Sarah Wynn-Williams
