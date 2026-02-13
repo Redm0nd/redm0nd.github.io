@@ -13,12 +13,13 @@ Books I've read and currently reading.
 - [The Curious Case of Mike Lynch](https://www.goodreads.com/book/show/223319170-the-curious-case-of-mike-lynch) by Katie Prescott
 - [The Odyssey](https://www.amazon.co.uk/Odyssey-Homer/dp/0199215190) by Homer
 - [Meditations](https://www.amazon.co.uk/Meditations-Penguin-Classics-Marcus-Aurelius/dp/0140449337) by Marcus Aurelius
-- [New York 2140]() by Kim Stanley Robinson
+- [New York 2140](https://www.goodreads.com/book/show/29570143-new-york-2140) by Kim Stanley Robinson
 
 ## Currently Reading
 - [Dark Squares](https://www.goodreads.com/book/show/223296276-dark-squares) by Danny Rensh
 
 ## 2026
+- [The Philosopher in the Valley](https://www.goodreads.com/book/show/214666632-the-philosopher-in-the-valley) by Michael Steinberger
 - [Notes on being a man](https://www.goodreads.com/book/show/230733473-notes-on-being-a-man) by Scott Galloway
 - [Punters](https://www.goodreads.com/book/show/58505727-punters) by Aaron Rogan
 - [The Bailout Babies](https://www.goodreads.com/book/show/241485615-the-bailout-babies) by Adam Maguire
