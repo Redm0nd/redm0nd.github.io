@@ -14,11 +14,15 @@ Books I've read and currently reading.
 - [The Odyssey](https://www.amazon.co.uk/Odyssey-Homer/dp/0199215190) by Homer
 - [Meditations](https://www.amazon.co.uk/Meditations-Penguin-Classics-Marcus-Aurelius/dp/0140449337) by Marcus Aurelius
 - [New York 2140](https://www.goodreads.com/book/show/29570143-new-york-2140) by Kim Stanley Robinson
+- [The Nvidia Way : Jensen Huang and the Making of a Tech Giant](https://www.goodreads.com/book/show/218319936-the-nvidia-way) - by Tae Kim
+- [One Hundred Years of Solitude](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
+- [Life 3.0: Being Human in the Age of Artificial Intelligence](https://www.goodreads.com/book/show/37857021-life-3-0) by Max Tegmark
 
 ## Currently Reading
-- [Dark Squares](https://www.goodreads.com/book/show/223296276-dark-squares) by Danny Rensh
+- [1929: Inside the Greatest Crash in History – and How It Shattered a Nation](https://www.goodreads.com/book/show/211179569-1929) by Andrew Ross Sorkin
 
 ## 2026
+- [Dark Squares](https://www.goodreads.com/book/show/223296276-dark-squares) by Danny Rensh
 - [The Philosopher in the Valley](https://www.goodreads.com/book/show/214666632-the-philosopher-in-the-valley) by Michael Steinberger
 - [Notes on being a man](https://www.goodreads.com/book/show/230733473-notes-on-being-a-man) by Scott Galloway
 - [Punters](https://www.goodreads.com/book/show/58505727-punters) by Aaron Rogan
