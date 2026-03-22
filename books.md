@@ -19,9 +19,9 @@ Books I've read and currently reading.
 - [Life 3.0: Being Human in the Age of Artificial Intelligence](https://www.goodreads.com/book/show/37857021-life-3-0) by Max Tegmark
 
 ## Currently Reading
-- [1929: Inside the Greatest Crash in History – and How It Shattered a Nation](https://www.goodreads.com/book/show/211179569-1929) by Andrew Ross Sorkin
 
 ## 2026
+- [1929: Inside the Greatest Crash in History – and How It Shattered a Nation](https://www.goodreads.com/book/show/211179569-1929) by Andrew Ross Sorkin (took a while to reaad)
 - [Dark Squares](https://www.goodreads.com/book/show/223296276-dark-squares) by Danny Rensh
 - [The Philosopher in the Valley](https://www.goodreads.com/book/show/214666632-the-philosopher-in-the-valley) by Michael Steinberger
 - [Notes on being a man](https://www.goodreads.com/book/show/230733473-notes-on-being-a-man) by Scott Galloway
