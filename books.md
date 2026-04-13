@@ -10,7 +10,6 @@ Books I've read and currently reading.
 
 ## To Read
 - [Sacrifice](https://www.goodreads.com/book/show/222730591-sacrifice) by Oisin Murphy
-- [The Curious Case of Mike Lynch](https://www.goodreads.com/book/show/223319170-the-curious-case-of-mike-lynch) by Katie Prescott
 - [The Odyssey](https://www.amazon.co.uk/Odyssey-Homer/dp/0199215190) by Homer
 - [Meditations](https://www.amazon.co.uk/Meditations-Penguin-Classics-Marcus-Aurelius/dp/0140449337) by Marcus Aurelius
 - [New York 2140](https://www.goodreads.com/book/show/29570143-new-york-2140) by Kim Stanley Robinson
@@ -19,6 +18,8 @@ Books I've read and currently reading.
 - [Life 3.0: Being Human in the Age of Artificial Intelligence](https://www.goodreads.com/book/show/37857021-life-3-0) by Max Tegmark
 
 ## Currently Reading
+- [The Curious Case of Mike Lynch](https://www.goodreads.com/book/show/223319170-the-curious-case-of-mike-lynch) by Katie Prescott
+
 
 ## 2026
 - [1929: Inside the Greatest Crash in History – and How It Shattered a Nation](https://www.goodreads.com/book/show/211179569-1929) by Andrew Ross Sorkin (took a while to reaad)
