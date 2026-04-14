@@ -14,14 +14,14 @@ Books I've read and currently reading.
 - [Meditations](https://www.amazon.co.uk/Meditations-Penguin-Classics-Marcus-Aurelius/dp/0140449337) by Marcus Aurelius
 - [New York 2140](https://www.goodreads.com/book/show/29570143-new-york-2140) by Kim Stanley Robinson
 - [The Nvidia Way : Jensen Huang and the Making of a Tech Giant](https://www.goodreads.com/book/show/218319936-the-nvidia-way) - by Tae Kim
-- [One Hundred Years of Solitude](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
 - [Life 3.0: Being Human in the Age of Artificial Intelligence](https://www.goodreads.com/book/show/37857021-life-3-0) by Max Tegmark
 
 ## Currently Reading
-- [The Curious Case of Mike Lynch](https://www.goodreads.com/book/show/223319170-the-curious-case-of-mike-lynch) by Katie Prescott
+- [One Hundred Years of Solitude](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
 
 
 ## 2026
+- [The Curious Case of Mike Lynch](https://www.goodreads.com/book/show/223319170-the-curious-case-of-mike-lynch) by Katie Prescott
 - [1929: Inside the Greatest Crash in History – and How It Shattered a Nation](https://www.goodreads.com/book/show/211179569-1929) by Andrew Ross Sorkin (took a while to reaad)
 - [Dark Squares](https://www.goodreads.com/book/show/223296276-dark-squares) by Danny Rensh
 - [The Philosopher in the Valley](https://www.goodreads.com/book/show/214666632-the-philosopher-in-the-valley) by Michael Steinberger
