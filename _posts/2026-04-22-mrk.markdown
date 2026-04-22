@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Multi Region KMS Keys Silent Error"
+title: "Multi Region Secrets KMS Keys Silent Error"
 date: 2026-04-22 21:00:30 +0100
 tags: aws cloud devops platform secrets kms multi-region
 published: true
