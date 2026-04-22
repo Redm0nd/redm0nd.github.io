@@ -28,7 +28,7 @@ Secret replication was launched in [2021](https://aws.amazon.com/about-aws/whats
 
 I must preface here, that from my experience with AWS outages, the main services that cause revenue impact are usually CDN or compute based, think EC2, ECS, EKS & Lambda. A scenario is where ECS is impacted in us-east-1 and new tasks cannot be launched due to API errors, it's likely that the Secrets Manager APIs in the same region would be **unaffected** at that time. Although if you're going to implement multi-region and disaster recovery you will want to cover all bases. As the last thing you want is your region switchover to fail due to Secrets Manager API errors across regions during an outage. Replicating secrets allows this issue to be combatted. 
 
-![alt text](/images/mkr/image.png)
+![](/images/mrk/image.png)
 
 
 ## How to actually do it
@@ -62,11 +62,11 @@ Resources:
 
 The surprising result is that the CloudFormation stack Update completes without any issues:
 
-![alt text](/images/mkr/image-1.png)
+![](/images/mrk/image-1.png)
 
 And upon checking the Secrets Manager Console and using the CLI you'll see InProgress set on the Replication:
 
-![alt text](/images/mkr/image-2.png)
+![](/images/mrk/image-2.png)
 
 ```
 $ aws secretsmanager describe-secret --secret-id MultiRegionTest
@@ -84,7 +84,7 @@ $ aws secretsmanager describe-secret --secret-id MultiRegionTest
 
 Then after AWS finalises making the [ReplicateSecretToRegions](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ReplicateSecretToRegions.html) API calls you'll see a failure:
 
-![alt text](/images/mrk/image-3.png)
+![](/images/mrk/image-3.png)
 
 ```
     "ReplicationStatus": [
