@@ -12,7 +12,11 @@ published: true
 
 Been working on multi region deployments a bit in 2026. As a result of this I've been working with replicating AWS Secrets Manager secrets across regions. 
 
-You can find more on how multi-region keys work [here](https://docs.aws.amazon.com/kms/latest/developerguide/mrk-how-it-works.html). Essentially in backup and recovery architecture, they allow you to process encrypted data without interruption even during a region outage. In basic terms, data maintained in the backup region can be decrypted in the backup region **and** data newly encrypted in the backup region can be descrypted in the primary region once that region is restored. So Region A fails, you flip traffic to Region B and once Region A is restored the data encrypted during downtime in the backup region can still be descrypted by the original region. 
+You can find more on how multi-region keys work [here](https://docs.aws.amazon.com/kms/latest/developerguide/mrk-how-it-works.html). Essentially in backup and recovery architecture, they allow you to process encrypted data without interruption even during a region outage. 
+
+In basic terms, data maintained in the backup region can be decrypted in the backup region **and** data newly encrypted in the backup region can be descrypted in the primary region once that region is restored.
+
+So Region A fails, you flip traffic to Region B and once Region A is restored the data encrypted during downtime in the backup region can still be descrypted by the original region. 
 
 Now, having worked with AWS for years now the times when something doesn't work as expected are few and far between. It can be easy to think something isn't working as expected __for you__ and quickly think; Ah this must be a bug. However, you think a little bit more and also of the number of users and scale AWS has and usually it's not a bug and you realise you may have been doing something not as it was intended to be done. 
 
@@ -24,7 +28,7 @@ Secret replication was launched in [2021](https://aws.amazon.com/about-aws/whats
 
 I must preface here, that from my experience with AWS outages, the main services that cause revenue impact are usually CDN or compute based, think EC2, ECS, EKS & Lambda. A scenario is where ECS is impacted in us-east-1 and new tasks cannot be launched due to API errors, it's likely that the Secrets Manager APIs in the same region would be **unaffected** at that time. Although if you're going to implement multi-region and disaster recovery you will want to cover all bases. As the last thing you want is your region switchover to fail due to Secrets Manager API errors across regions during an outage. Replicating secrets allows this issue to be combatted. 
 
-![alt text](../images/mkr/image.png)
+![alt text](/images/mkr/image.png)
 
 
 ## How to actually do it
@@ -58,11 +62,11 @@ Resources:
 
 The surprising result is that the CloudFormation stack Update completes without any issues:
 
-![alt text](../images/mkr/image-1.png)
+![alt text](/images/mkr/image-1.png)
 
 And upon checking the Secrets Manager Console and using the CLI you'll see InProgress set on the Replication:
 
-![alt text](../images/mkr/image-2.png)
+![alt text](/images/mkr/image-2.png)
 
 ```
 $ aws secretsmanager describe-secret --secret-id MultiRegionTest
@@ -80,7 +84,7 @@ $ aws secretsmanager describe-secret --secret-id MultiRegionTest
 
 Then after AWS finalises making the [ReplicateSecretToRegions](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ReplicateSecretToRegions.html) API calls you'll see a failure:
 
-![alt text](image-3.png)
+![alt text](/images/mrk/image-3.png)
 
 ```
     "ReplicationStatus": [
