@@ -1,3 +1,11 @@
+- date: "2026-05-17"
+  race: "Hackney Half 2026"
+  distance: 21.1
+  time: "01:28:12"
+  location: "Hackney, London"
+  notes: "Tough, lots of turns"
+  status: "completed"
+
 - date: "2026-03-22"
   race: "Dunboyne 10km"
   distance: 10.0
