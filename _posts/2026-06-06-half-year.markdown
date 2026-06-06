@@ -1,0 +1,16 @@
+half way through the year. - AI Review
+
+In very 2026 fashion i'm writing this post from the GitHub app on my phone. I note it doesn't auto capitilize words or have auto-correct but alas it must be do. 
+
+So I've been working with AI pretty heavily in 2026. in my predicitions post for 2026, i mentioned that usage would become consolidated and companies will begin to clamp down on providers - that has happened for us. 
+
+the next thing i believe will happen is that usage itself will be further scrutinised, or rather output. With the lack of secuirty review and governance with AI usage it has gotten to the stage where a lot of devs don't write their own commit messages anymore and have LLM's push one line changes (I am guilty of this). 
+
+i believe this will be the next thing to go, although I could be wrong as perhaps it's low hanging fruit. 
+
+The only other thing I can say from the back of a week in South of Italy. the TAM (total addressable market) for AI is not as big as the US suspects. The owner in our hotel had google translate speech to text readily available to her this whole week and that was enough for her. No LL
+ usage or tokens needed! 
+
+i will probably write a more in-depth post on this when I'm back at the laptop but the other thing I can't help thinking is that claude code or codex can not be the final form of these tools. From a UI aspect and ease of use, claude code is the most popular method of llm use for coding/software engineering but coming from cursor and initial days of ChatGPT i can't imagine this being the final product - even feeding in context and setting up is a pain. 
+
+I know agentic engineering is growing but for me that has the same usability issue. 
