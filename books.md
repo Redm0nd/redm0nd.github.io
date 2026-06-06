@@ -17,10 +17,11 @@ Books I've read and currently reading.
 - [Life 3.0: Being Human in the Age of Artificial Intelligence](https://www.goodreads.com/book/show/37857021-life-3-0) by Max Tegmark
 
 ## Currently Reading
-- [One Hundred Years of Solitude](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
+- [The Question of Palestine]() by Edward W. Said
 
 
 ## 2026
+- [One Hundred Years of Solitude](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
 - [The Curious Case of Mike Lynch](https://www.goodreads.com/book/show/223319170-the-curious-case-of-mike-lynch) by Katie Prescott
 - [1929: Inside the Greatest Crash in History – and How It Shattered a Nation](https://www.goodreads.com/book/show/211179569-1929) by Andrew Ross Sorkin (took a while to reaad)
 - [Dark Squares](https://www.goodreads.com/book/show/223296276-dark-squares) by Danny Rensh
