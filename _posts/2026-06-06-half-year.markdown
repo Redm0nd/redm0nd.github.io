@@ -1,4 +1,11 @@
-half way through the year. - AI Review
+---
+layout: post
+title: "half way through the year. - AI Review"
+date: 2026-06-06 08:00:30 +0100
+tags: aws cloud claude ai
+published: true
+---
+
 
 In very 2026 fashion i'm writing this post from the GitHub app on my phone. I note it doesn't auto capitilize words or have auto-correct but alas it must be do. 
 
