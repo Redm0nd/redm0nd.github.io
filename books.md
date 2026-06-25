@@ -21,6 +21,7 @@ Books I've read and currently reading.
 
 
 ## 2026
+- [Farenheit 417]() by Ray Bradbury
 - [One Hundred Years of Solitude](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
 - [The Curious Case of Mike Lynch](https://www.goodreads.com/book/show/223319170-the-curious-case-of-mike-lynch) by Katie Prescott
 - [1929: Inside the Greatest Crash in History – and How It Shattered a Nation](https://www.goodreads.com/book/show/211179569-1929) by Andrew Ross Sorkin (took a while to reaad)
