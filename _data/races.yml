@@ -1,3 +1,27 @@
+- date: "2027-04-24"
+  race: "London Marathon 2027
+  distance: 42.195
+  time: "TBC"
+  location: "London, UK"
+  notes: ""
+  status: "upcoming"
+
+- date: "2026-12-06"
+  race: "Valencia Marathon 2026"
+  distance: 42.195
+  time: "TBC"
+  location: "Valencia, Spain"
+  notes: ""
+  status: "upcoming"
+
+- date: "2026-10-25"
+  race: "Dublin Marathon 2026"
+  distance: 42.195
+  time: "TBC"
+  location: "Dublin, Ireland"
+  notes: ""
+  status: "upcoming"
+
 - date: "2026-09-20"
   race: "Dublin Half Marathon 2026"
   distance: 21.1
