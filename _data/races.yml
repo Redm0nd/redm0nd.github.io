@@ -1,3 +1,19 @@
+- date: "2026-09-20"
+  race: "Dublin Half Marathon 2026"
+  distance: 21.1
+  time: "TBC"
+  location: "Phoenix Park, Dublin"
+  notes: ""
+  status: "upcoming"
+
+- date: "2026-07-12"
+  race: "Final 10KM 2026"
+  distance: 10.0
+  time: "TBC"
+  location: "Swords, Dublin"
+  notes: ""
+  status: "upcoming"
+
 - date: "2026-05-17"
   race: "Hackney Half 2026"
   distance: 21.1
