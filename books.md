@@ -15,41 +15,44 @@ Books I've read and currently reading.
 - [New York 2140](https://www.goodreads.com/book/show/29570143-new-york-2140) by Kim Stanley Robinson
 - [The Nvidia Way : Jensen Huang and the Making of a Tech Giant](https://www.goodreads.com/book/show/218319936-the-nvidia-way) - by Tae Kim
 - [Life 3.0: Being Human in the Age of Artificial Intelligence](https://www.goodreads.com/book/show/37857021-life-3-0) by Max Tegmark
+- [Dad Brain]() by Darby Saxbe
+- [Everything you want is on the other side of hard]() by Ken Rideout
 
 ## Currently Reading
 - [The Question of Palestine]() by Edward W. Said
+- [The Elements of Power]() by Nicholas Niarchos
 
 
 ## 2026
-- [Farenheit 451]() by Ray Bradbury
-- [One Hundred Years of Solitude](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
+- [Farenheit 451](https://www.goodreads.com/en/book/show/13079982-fahrenheit-451) by Ray Bradbury ⭐⭐⭐⭐⭐
+- [One Hundred Years of Solitude](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez ⭐⭐⭐⭐⭐
 - [The Curious Case of Mike Lynch](https://www.goodreads.com/book/show/223319170-the-curious-case-of-mike-lynch) by Katie Prescott
-- [1929: Inside the Greatest Crash in History – and How It Shattered a Nation](https://www.goodreads.com/book/show/211179569-1929) by Andrew Ross Sorkin (took a while to reaad)
-- [Dark Squares](https://www.goodreads.com/book/show/223296276-dark-squares) by Danny Rensh
-- [The Philosopher in the Valley](https://www.goodreads.com/book/show/214666632-the-philosopher-in-the-valley) by Michael Steinberger
+- [1929: Inside the Greatest Crash in History – and How It Shattered a Nation](https://www.goodreads.com/book/show/211179569-1929) by Andrew Ross Sorkin (took a while to reaad) ⭐⭐
+- [Dark Squares](https://www.goodreads.com/book/show/223296276-dark-squares) by Danny Rensh ⭐⭐⭐⭐⭐
+- [The Philosopher in the Valley](https://www.goodreads.com/book/show/214666632-the-philosopher-in-the-valley) by Michael Steinberger ⭐⭐⭐
 - [Notes on being a man](https://www.goodreads.com/book/show/230733473-notes-on-being-a-man) by Scott Galloway
 - [Punters](https://www.goodreads.com/book/show/58505727-punters) by Aaron Rogan
 - [The Bailout Babies](https://www.goodreads.com/book/show/241485615-the-bailout-babies) by Adam Maguire
 
 ## 2025
-- [Careless People](https://www.goodreads.com/book/show/223436601-careless-people) by Sarah Wynn-Williams
+- [Careless People](https://www.goodreads.com/book/show/223436601-careless-people) by Sarah Wynn-Williams ⭐⭐⭐⭐⭐
 - ~~[Elon Musk](https://www.goodreads.com/book/show/122765395-elon-musk) by Walter Isaacson~~ (did not finish)
 - [Aer Dogs](https://www.goodreads.com/book/show/202093604-aer-dogs) by Tom Lyons
 - [Code Dependent](https://www.goodreads.com/book/show/127282778-code-dependent) by Madhumita Murgia
-- [Source Code: My Beginnings](https://www.goodreads.com/book/show/213034913-source-code) by Bill Gates
+- [Source Code: My Beginnings](https://www.goodreads.com/book/show/213034913-source-code) by Bill Gates ⭐⭐⭐⭐
 - [The Racket](https://www.goodreads.com/book/show/204744031-the-racket) by Conor Niland
-- [The Antisocial Network](https://www.goodreads.com/book/show/57796397-the-antisocial-network) by Ben Mezrich
-- [How to Win the Premier League](https://www.goodreads.com/book/show/209194343-how-to-win-the-premier-league) by Ian Graham
+- [The Antisocial Network](https://www.goodreads.com/book/show/57796397-the-antisocial-network) by Ben Mezrich ⭐⭐⭐⭐
+- [How to Win the Premier League](https://www.goodreads.com/book/show/209194343-how-to-win-the-premier-league) by Ian Graham ⭐⭐⭐
 - [ADHD Unpacked](https://www.goodreads.com/book/show/221120724-adhd-unpacked) by Alex Conner and James Brown
 - [Hope](https://www.goodreads.com/book/show/220114692-hope) by Pope Francis
-- [The Trading Game](https://www.goodreads.com/book/show/188543465-the-trading-game) by Gary Stevenson
+- [The Trading Game](https://www.goodreads.com/book/show/188543465-the-trading-game) by Gary Stevenson ⭐⭐⭐⭐⭐
 - [Supremacy](https://www.goodreads.com/book/show/199809440-supremacy) by Parmy Olson
 
 ## 2024
-- [Catch-22](https://www.goodreads.com/book/show/168668.Catch_22) by Joseph Heller
-- [Chip War](https://www.goodreads.com/book/show/60321447-chip-war) by Chris Miller
+- [Catch-22](https://www.goodreads.com/book/show/168668.Catch_22) by Joseph Heller ⭐⭐⭐⭐⭐
+- [Chip War](https://www.goodreads.com/book/show/60321447-chip-war) by Chris Miller ⭐⭐⭐⭐⭐
 - [Algebra of Happiness](https://www.goodreads.com/book/show/42872963-the-algebra-of-happiness) by Scott Galloway
-- [Feel Good Productivity](https://www.goodreads.com/book/show/142402923-feel-good-productivity) by Ali Abdaal
-- [Ultra-Processed People](https://www.goodreads.com/book/show/200196183-ultra-processed-people) by Chris van Tulleken
-- [The Organized Mind](https://www.goodreads.com/book/show/18693669-the-organized-mind) by Daniel Levitin
+- [Feel Good Productivity](https://www.goodreads.com/book/show/142402923-feel-good-productivity) by Ali Abdaal ⭐⭐
+- [Ultra-Processed People](https://www.goodreads.com/book/show/200196183-ultra-processed-people) by Chris van Tulleken ⭐⭐⭐⭐
+- [The Organized Mind](https://www.goodreads.com/book/show/18693669-the-organized-mind) by Daniel Levitin ⭐⭐⭐⭐⭐
 - [Born to Be a Footballer](https://www.goodreads.com/book/show/178821832-born-to-be-a-footballer) by Liam Brady
