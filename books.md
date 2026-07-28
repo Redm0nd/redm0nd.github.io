@@ -16,14 +16,14 @@ Books I've read and currently reading.
 - [The Nvidia Way : Jensen Huang and the Making of a Tech Giant](https://www.goodreads.com/book/show/218319936-the-nvidia-way) - by Tae Kim
 - [Life 3.0: Being Human in the Age of Artificial Intelligence](https://www.goodreads.com/book/show/37857021-life-3-0) by Max Tegmark
 - [Dad Brain]() by Darby Saxbe
-- [Everything you want is on the other side of hard]() by Ken Rideout
 
 ## Currently Reading
+- [Everything you want is on the other side of hard]() by Ken Rideout
 - [The Question of Palestine]() by Edward W. Said
-- [The Elements of Power]() by Nicholas Niarchos
 
 
 ## 2026
+- [The Elements of Power]() by Nicholas Niarchos
 - [Farenheit 451](https://www.goodreads.com/en/book/show/13079982-fahrenheit-451) by Ray Bradbury ⭐⭐⭐⭐⭐
 - [One Hundred Years of Solitude](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez ⭐⭐⭐⭐⭐
 - [The Curious Case of Mike Lynch](https://www.goodreads.com/book/show/223319170-the-curious-case-of-mike-lynch) by Katie Prescott
