@@ -18,11 +18,12 @@ Books I've read and currently reading.
 - [Dad Brain]() by Darby Saxbe
 
 ## Currently Reading
-- [Everything you want is on the other side of hard]() by Ken Rideout
+- [Bytes and Bullets]() by Steve Feldstein
 - [The Question of Palestine]() by Edward W. Said
 
 
 ## 2026
+- [Everything you want is on the other side of hard]() by Ken Rideout
 - [The Elements of Power]() by Nicholas Niarchos
 - [Farenheit 451](https://www.goodreads.com/en/book/show/13079982-fahrenheit-451) by Ray Bradbury ⭐⭐⭐⭐⭐
 - [One Hundred Years of Solitude](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez ⭐⭐⭐⭐⭐
