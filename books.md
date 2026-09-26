@@ -18,10 +18,12 @@ Books I've read and currently reading.
 - [Dad Brain]() by Darby Saxbe
 
 ## Currently Reading
+- [The impossible job: the truly unbelievable world of football referees] by William Ralston
 - [The Question of Palestine]() by Edward W. Said
 
 
 ## 2026
+- [We Are Not Machines: The Fight for the Future of Work] by Sarah O'Connor DNF (busy with college work)
 - [Bytes and Bullets]() by Steve Feldstein
 - [Everything you want is on the other side of hard]() by Ken Rideout
 - [The Elements of Power]() by Nicholas Niarchos
