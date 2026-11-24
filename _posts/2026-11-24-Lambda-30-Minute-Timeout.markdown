@@ -357,6 +357,8 @@ No, but at least now there's a number on it. This is straight from the Lambda ru
 
 So that's **1 in 2,600** for the top 4. The more worrying number is **44% for relegation**, and 19th is their most likely finish.
 
+To be fair, the [Opta supercomputer](https://theanalyst.com/?p=268045) only has United going down about 21% of the time, so my 44% is probably on the high side. My model only looks at this season's results, so take it with a pinch of salt.
+
 With the top 4 gone, the big games are really about staying up. I added relegation odds for a win, draw or loss in every remaining fixture (one more counter in the same loop, no extra simulations). These are the six-pointers:
 
 | Fixture | Relegated if win | if draw | if loss | Swing (win v loss) |
