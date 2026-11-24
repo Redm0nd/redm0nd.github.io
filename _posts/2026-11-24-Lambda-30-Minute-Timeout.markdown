@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lambda's new 30 minute timeout: running 30 million Man United seasons in one function"
+title: "Testing out AWS Lambdas new 30 minute timeout"
 date: 2026-11-24 05:30:00 +0000
 tags: aws lambda serverless terraform sqs
 published: true
@@ -11,21 +11,21 @@ canonical_url: https://builder.aws.com/content/3MWWrxWWpuDPN6CfIikBX1eLd8g/lambd
 
 ## Preface
 
-Since 2018 the first question I ask before putting anything on Lambda is "will it finish in 15 minutes?".
+Since I started working with AWS in 2018 if the answer to the question "will it finish in 15 minutes?" was yes then the answer was almost always to run it on Lambda.
 
-If not, it went to Fargate or Batch. Half the reason my [S3 to Batch via EventBridge](https://redm0nd.github.io/2024/09/02/S3-EventBridge-Batch.html) post exists is that limit.
+If the answer was no, then usually it ran on ECS Fargate or Batch. That's one of the main reasons why my [S3 to Batch via EventBridge](https://redm0nd.github.io/2024/09/02/S3-EventBridge-Batch.html) post exists.
 
-On November 19th AWS [raised it to 30 minutes](https://aws.amazon.com/blogs/compute/announcing-30-minute-timeout-for-on-demand-aws-lambda-event-functions/). So I wanted to build something that actually needs it.
+With re:invent around the corner, on November 19th AWS [raised the maximum execution time/timeout on Lambda to 30 minutes](https://aws.amazon.com/blogs/compute/announcing-30-minute-timeout-for-on-demand-aws-lambda-event-functions/). So I wanted to build something that tests it out.
 
-I went with a Monte Carlo sim for the question every United fan is asking: **can Man United still make the top 4?**
+I've been working more with models and quants lately so I decided to try a Monte Carlo simulation for the question every United fan is asking: **can Man United make the top 4 this season?**
 
-Spoiler, they're **19th on 8 points** after 11 games with one league win, a [5–2 against Ipswich in August](https://www.si.com/soccer/man-utd-drop-relegation-zone-man-city-defeat-red-devils-40-year-low). But I wanted a number on it, and one on relegation too.
+Spoiler, they're **19th on 8 points** after 11 games with one league win, a [5–2 against Ipswich in August](https://www.si.com/soccer/man-utd-drop-relegation-zone-man-city-defeat-red-devils-40-year-low). So the answer is most definitely no however, I want to put a number on it and put a number on relegation too.
 
 All the code is on GitHub: [Redm0nd/mufc-montecarlo](https://github.com/Redm0nd/mufc-montecarlo)
 
 ## What changed
 
-It's only **Event Functions** that get 30 minutes ([announcement](https://aws.amazon.com/blogs/compute/announcing-30-minute-timeout-for-on-demand-aws-lambda-event-functions/)):
+It's only **Event Functions** that get 30 minutes ([announcement](https://aws.amazon.com/blogs/compute/announcing-30-minute-timeout-for-on-demand-aws-lambda-event-functions/))(these used to be called plain old Lambda functions AFAIK):
 
 | Lambda type | Sync | Async | Event source mapping |
 | --- | --- | --- | --- |
@@ -33,23 +33,25 @@ It's only **Event Functions** that get 30 minutes ([announcement](https://aws.am
 | Event Functions, Managed Instances | 30 min | 90 min | 90 min |
 | Web Functions | 15 min | 15 min | 15 min |
 
-Things to be aware of:
+Some things to be aware of:
 
 - **Amazon MQ, DocumentDB and older Kafka mappings** stay at 14 minutes. Kafka ones created before the 19th won't warn you either.
 - **Init is still 10 seconds.**
 - **The caller's timeout still wins** on sync invokes, which is why I'm using SQS.
 
-## How it fits together
+## Putting it together
 
 ![Architecture: a message on an SQS queue triggers a Lambda with a 1,800s timeout, which fetches the season CSV from football-data.co.uk and writes results to S3, with a dead-letter queue after 2 failed receives](https://raw.githubusercontent.com/Redm0nd/mufc-montecarlo/main/images/mufc-architecture.png)
 
-A message on the queue says which team and season to run. Lambda pulls the CSV, runs for ~20 minutes and writes JSON to S3. Two failures and it goes to the DLQ.
+A message on the queue says which team and season to run. Lambda then pulls in the CSV, runs for ~20 minutes and writes JSON to S3. Two failures and it goes to the DLQ. 
 
-No one wants to hold an HTTP connection open for 20 minutes, so SQS it is.
+This is what would have timed out prior to this release.
+
+It's not great practice to hold a HTTP connection open for 20 minutes, so I've chosen SQS to handle queuing.
 
 ## The simulation
 
-I'm not a data scientist, so it's the simple [Maher (1982)](https://en.wikipedia.org/wiki/Poisson_regression) model. Each team gets an attack and defence rating, plus one home advantage number:
+I'm not a data scientist, so it's the simple [Maher Poisson Distribution (1982)](https://en.wikipedia.org/wiki/Poisson_regression) model. Each team gets an attack and defence rating, plus one home advantage number:
 
 ```
 home goals ~ Poisson(home_adv * attack[home] * defence[away])
