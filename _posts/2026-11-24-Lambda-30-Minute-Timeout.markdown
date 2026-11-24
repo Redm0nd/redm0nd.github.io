@@ -249,7 +249,7 @@ resource "terraform_data" "lambda_timeout" {
 
 The event source mapping also gets a `depends_on = [terraform_data.lambda_timeout]` so SQS doesn't start invoking the function while it's still at 15 minutes.
 
-It's a bit of a hack, but it works and you can remove it once the provider supports 1800. CloudFormation and SAM don't have this problem as they pass the value straight through to the API.
+It's a bit of a hack, but it works and you can remove it once the provider supports 1800. There's already an open PR to raise the limit, [hashicorp/terraform-provider-aws#51180](https://github.com/hashicorp/terraform-provider-aws/pull/51180), so give it a 👍 if you want it merged sooner. CloudFormation and SAM don't have this problem as they pass the value straight through to the API.
 
 Some other settings in there:
 
